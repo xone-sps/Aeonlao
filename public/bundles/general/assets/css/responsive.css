@@ -1,0 +1,29 @@
+@media (min-width: 1200px){
+/*.container {
+    width: 1170px;
+}*/
+}
+
+
+@media (max-width: 991px){
+#get_quote h3 {
+    text-align: center;
+    margin-top: 0;
+}
+a.btn_quote {
+    float: none;
+    margin: 10px auto auto;
+    display: block;
+    text-align: center;
+    max-width: 230px;
+}
+/*.container {
+    width: 970px;
+}*/
+}
+/*@media (min-width: 768px){
+
+.container {
+    width: 750px;
+}*/
+}

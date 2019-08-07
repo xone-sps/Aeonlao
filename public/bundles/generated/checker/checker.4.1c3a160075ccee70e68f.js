@@ -1,0 +1,2 @@
+webpackJsonp([4],{AM4o:function(t,e,s){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var a=s("mr19"),n=s("XyMi"),i=Object(n.a)(a.a,void 0,void 0,!1,null,null,null);e.default=i.exports},mr19:function(t,e,s){"use strict";e.a={data:function(){return{mainTag:"content",defaultClass:"transclude"}},props:{tag:{type:String,required:!0},childClass:{type:String,default:""}},render:function(t){return t(this.mainTag,[t(this.tag,{attrs:{class:this.defaultClass+" "+this.childClass}},this.$slots.default)])}}}});
+//# sourceMappingURL=checker.4.1c3a160075ccee70e68f.js.map
