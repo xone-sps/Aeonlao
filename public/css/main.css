@@ -1,3 +1,25 @@
+@font-face {
+font-family: 'noto-regular';
+src: url(../fonts/NotoSerifLao-Regular.ttf) format("truetype");
+}
+
+@font-face {
+font-family: 'noto-bold';
+src: url(../fonts/NotoSerifLao-Bold.ttf) format("truetype");
+}
+
+body, input, h1, h2, h3, h4, h5, h6, p {
+font-family: 'Roboto','noto-regular'!important;
+/*font-family: 'Lao Muang Don', Saysettha OT, Phetsarath OT, sans-serif; */
+/*font-family: 'Noto Serif Lao', Saysettha OT, Phetsarath OT, sans-serif !important; */
+}
+body, input,p{
+font-family: 'Roboto', 'noto-regular', 'Google Sans', arial, serif, sans-serif !important;
+/*font-family: 'Lao Muang Don', Saysettha OT, Phetsarath OT, sans-serif; */
+/*font-family: 'Noto Serif Lao', Saysettha OT, Phetsarath OT, sans-serif !important; */
+
+}
+
 h1,h2,h3,h4,h5{
     color: #333;
     font-weight: 500;

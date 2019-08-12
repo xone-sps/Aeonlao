@@ -14,8 +14,7 @@
                     >
                   </Router-link>
                 </div>
-          <h3>Aeon Leasing Service (Laos) Co. , Ltd</h3>
-          <p>Id pri consul aeterno petentium. Vivendo abhorreant et vim, et quot persecuti mel. Libris hendrerit ex sea. Duo legere evertitur an, pri hinc doctus definitiones an, vix id dicam putent. Ius ornatus instructior in.</p>
+          <h3>{{s.site_name}}</h3>
         </div>
         <div class="column is-4">
           <h3>Discover</h3>
@@ -30,17 +29,17 @@
         </div>
         <div class="column is-4" id="contact_bg">
           <h3>Contacts</h3>
-          <ul id="contact_details_footer">
-            <li id="address_footer"><i class="fa fa-home icon aeon"></i>4 West 31st Street New York, New York - 10001 United States</li>
-            <li id="phone_footer"><i class="fa fa-phone icon aeon"></i><a href="tel:020 52202014">+45 423 445 99</a></li>
-            <li id="email_footer"><i class="fa fa-envelope icon aeon"></i><a href="mailto:john@example.com">info@gmail.com</a></li>
+          <ul id="contact_details_footer" v-if="!$utils.isEmptyVar( s )">
+            <li id="address_footer"><i class="fa fa-home icon aeon"></i>{{s.address}}</li>
+            <li id="phone_footer"><i class="fa fa-phone icon aeon"></i><a href="tel:020 52202014">{{s.phone}}</a></li>
+            <li id="email_footer"><i class="fa fa-envelope icon aeon"></i><a href="mailto:john@example.com">{{s.email}}</a></li>
           </ul>
         </div>
       </div><!-- End row -->  
       <div id="social_footer">
         <ul>
-          <li><a href="#0"><i class="fab fa-facebook"></i></a></li>
-          <li><a href="#0"><i class="fab fa-twitter"></i></a></li>
+          <li><a :href="s.facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a v-if="!$utils.isEmptyVar(s.twitter)" :href="s.twitter" target="_blank"><i class="fab fa-twitter"></i></a></li>
           <li><a href="#0"><i class="fab fa-instagram"></i></a></li>
           <li><a href="#0"><i class="fab fa-youtube"></i></a></li>
         </ul>

@@ -8,12 +8,13 @@
 				<div class="container">
 					<div class="columns">
 						<div class="column is-9">
-							<h3>Looking for a Promotion service? </h3>
+							<h3>Looking for a Promotion shop? </h3>
+							<InstituteCategory/>
 						</div>
 						<div class="column is-3">
 							<!-- 					<a href="quotation_wizard.html" class="btn_quote">Get Promotion</a> -->
 							<div class="button_cont btn_quote" align="center">
-								<a class="main_b" href="add-website-here" target="_blank">Get Promotion</a>
+								<a class="main_b shadow-drop-center" href="add-website-here" target="_blank">Get Promotion</a>
 							</div>
 						</div>
 					</div><!-- End row -->
@@ -23,16 +24,28 @@
 
 		<div id="feat_home">
 			<section class="section">
-				<div class="container margin_60_25">
+				<div class="container">
+				</div>
+				<div class="container margin_15_25">
+					<div class="main_title">
+						<h3>Our services</h3>
+					</div>						
 					<div class="columns">
-						<div class="column is-6">
+						<div class="column is-4">
 							<div class="box_feat">
 								<span><img src="/assets/images/Kredit-AEON.png" alt=""></span>
 								<h3>Full Protection</h3>
 								<p>Lorem ipsum dolor sit amet, no movet simul laoreet pri, aperiri fabulas expetenda ei pro. Sed vero assentior ad, est vide liber viris ne. Mea saperet evertitur intellegebat ei, an labore cetero eos.</p>
 							</div>
 						</div>
-						<div class="column is-6">
+						<div class="column is-4">
+							<div class="box_feat">
+								<span><img src="/assets/images/credit.jpg" alt=""></span>
+								<h3>Management via App</h3>
+								<p>Mea saperet evertitur intellegebat ei, an labore cetero eos. Quo no facilisis contentiones, enim graeci vim ea, justo graecis ne qui. His tation theophrastus intellegebat ut, hinc fierent nam ea.</p>
+							</div>
+						</div>
+												<div class="column is-4">
 							<div class="box_feat">
 								<span><img src="/assets/images/credit.jpg" alt=""></span>
 								<h3>Management via App</h3>
@@ -44,9 +57,45 @@
 				</div>
 			</section>
 		</div>
+
+
+<section class="section">
+	<div class="container">
+		<div class="columns">
+		<div class="column is-3">
+			<div class="image">
+				<img src="/assets/images/Kredit-AEON.png" alt="">
+			</div>
+			<div class="contents">
+				<h3>TWheelchair Race | Funny Clip | Johnny English Reborn | Mr Bean Official</h3>
+				<div class="detail">
+					<p>Post date 3/8/2019</p>
+				</div>
+			</div>
+		</div>
+				<div class="column is-3">
+							<div class="image">
+		<img src="/assets/images/posts/service.jpg" alt="">
+	</div>
+		</div>
+				<div class="column is-3">
+							<div class="image">
+			<img src="/assets/images/Kredit-AEON.png" alt="">
+		</div>
+		</div>
+				<div class="column is-3">
+							<div class="image">
+			<img src="/assets/images/Kredit-AEON.png" alt="">
+		</div>
+		</div>
+	</div>
+	</div>
+</section>
+
+
 		<section class="section">
 			<div class="container">
-				<div>
+				<div class="main_title">
 					<h3>News</h3>
 					<p>
 						<a href="tips.html" class="link_normal" style="float:right; margin-top:-24px;">More  <i class="fa fa-angle-right" aria-hidden="true"></i></a>
@@ -62,41 +111,47 @@
 						<figure class="animated"><a href="service_1.html">
 							<img src="/assets/images/posts/service.jpg" alt="" class="img-responsive"></a></figure>
 							<h3>Wiring installation</h3>
-							<p>
+							<!-- <p>
 								Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus.
-							</p>
+							</p> -->
 						</div>
 						<div class="column is-4 news">
 							<figure class="animated"><a href="service_2.html">
 								<img src="/assets/images/posts/service2.jpg" alt="" class="img-responsive"></a></figure>
 								<h3>Security Plan</h3>
-								<p>
+								<!-- <p>
 									Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus.
-								</p>
+								</p> -->
 							</div>
 							<div class="column is-4">
 								<figure class="animated"><a href="service_3.html">
 									<img src="/assets/images/posts/service3.jpg" alt="" class="img-responsive"></a></figure>
 									<h3>Security Check</h3>
-									<p>
+									<!-- <p>
 										Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus.
-									</p>
+									</p> -->
 								</div>	
 							</div>
 						</div>
 					</section>
-					<section class="section">
+<!-- 					<section class="section">
 						<div class="container">
 							<h3 style="margin-top:-24px;">Activity</h3>
 							<p style="padding-bottom: 8px;margin-top: -20px;">
 								<a href="tips.html" class="link_normal" style="float:right;">Read more activity <i class="fa fa-angle-right" aria-hidden="true"></i></a>
 							</p>
 						</div>
-					</section>
+					</section> -->
 					<hr>
 					<div id="feat_home">
 						<section class="section">
-							<div class="container margin_60_25">
+							<div class="container margin_15_25">
+				<div class="main_title">
+					<h3>Job Recruiment</h3>
+					<p>
+						<a href="tips.html" class="link_normal" style="float:right; margin-top:-24px;">More  <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+					</p>
+				</div>
 								<div class="columns">
 									<div class="column is-6">
 										<div class="box_feat">
@@ -155,6 +210,72 @@
 				margin-top: 100px;
 				margin-bottom: 40px;
 			}
+			.slide-left {
+				-webkit-animation: slide-left 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+				animation: slide-left 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+			}
+/* ----------------------------------------------
+ * Generated by Animista on 2019-8-9 10:42:16
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
 
-			
-			</style>
+/**
+ * ----------------------------------------
+ * animation slide-left
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-left {
+ 	0% {
+ 		-webkit-transform: translateX(0);
+ 		transform: translateX(0);
+ 	}
+ 	100% {
+ 		-webkit-transform: translateX(-100px);
+ 		transform: translateX(-100px);
+ 	}
+ }
+ @keyframes slide-left {
+ 	0% {
+ 		-webkit-transform: translateX(0);
+ 		transform: translateX(0);
+ 	}
+ 	100% {
+ 		-webkit-transform: translateX(-100px);
+ 		transform: translateX(-100px);
+ 	}
+ }
+
+
+ .shadow-drop-center {
+ 	-webkit-animation: shadow-drop-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+ 	animation: shadow-drop-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+ }
+
+/* ----------------------------------------------
+ * Generated by Animista on 2019-8-9 10:48:21
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation shadow-drop-center
+ * ----------------------------------------
+ */
+ @-webkit-keyframes shadow-drop-center {
+ 	0% {
+ 		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+ 	}
+ 	100% {
+ 		box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+ 	}
+ }
+ @keyframes shadow-drop-center {
+ 	0% {
+ 		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+ 	}
+ 	100% {
+ 		box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+ 	}
+ }
+ </style>
+

@@ -1,137 +1,308 @@
 <template>
     <div>
         <carousel
-            :per-page="1"
-            :mouse-drag="true"
-            :autoplay="true"
-            :autoplayHoverPause="false"
-            :autoplayTimeout="8000"
-            :paginationEnabled="false"
-            :speed="500"
-            :loop="true"
-        >
-            <slide v-for="(slide, index) in items" :key="index" @slideclick="openLink(slide.link)">
-                <div
-                    class="slider_bck"
-                    :style="`background:url('${path}/${slide.image}');cursor: ${hasLink(slide.link) ? 'pointer;' : ''}`"
-                ></div>
-                <div class="container slide-text">
-                    <h1 style="transition:ease;" v-html="$utils.sub($utils.strip(slide.name), 60)"></h1>
-                    <p v-html="$utils.sub($utils.strip(slide.description), 100)"></p>
-                    <ul>
-                        <li @slideclick="openLink(slide.link)">
-                            <a :style="`display: ${noLink(slide.link) ? 'none;' : ''}`" data-animation="fadeInUp"
-                               data-delay="1.6s" class="main_b">Read more</a>                                              
-                        </li>
-                    </ul>
-                </div>
-
-            </slide>
-        </carousel>
-        <!--====== SLIDER PART ENDS ======-->
-    </div>
+        :per-page="1"
+        :mouse-drag="false"
+        :autoplay="true"
+        :autoplayHoverPause="false"
+        :autoplayTimeout="8000"
+        :paginationEnabled="false"
+        :speed="500"
+        :loop="true"
+        :navigationEnabled="true"
+        :slideOnSwipe="true"
+        :navigationPrevLabel='`<span class="prev"> <i class="fa fa-chevron-left aria-hidden="true""></i>
+    </span>`'
+        :navigationNextLabel='`<span class="next"><i class="fa fa-chevron-right" aria-hidden="true"></i</span>`'
+    >
+    <slide v-for="(slide, index) in items" :key="index" @slideclick="openLink(slide.link)">
+        <div
+        class="slider_bck"
+        :style="`background:url('${path}/${slide.image}');cursor: ${hasLink(slide.link) ? 'pointer;' : ''}`"
+        ></div>
+        <div class="container slide-text">
+            <h1 style="transition:ease;" v-html="$utils.sub($utils.strip(slide.name), 60)"></h1>
+            <p v-html="$utils.sub($utils.strip(slide.description), 100)"></p>
+            <ul>
+                <li @slideclick="openLink(slide.link)">
+                    <a :style="`display: ${noLink(slide.link) ? 'none;' : ''}`" data-animation="fadeInUp"
+                    data-delay="1.6s" class="main_b slide-left">Read more</a>                                              
+                </li>
+            </ul>
+        </div>
+</slide>
+</carousel>
+<!--====== SLIDER PART ENDS ======-->
+</div>
 </template>
 
-<script>
-    import {Carousel, Slide} from "vue-carousel";
 
-    export default {
-        props: ["items"],
-        data() {
-            return {
-                path: `${this.baseUrl}/assets/images/banners`
-            };
+<script>
+import {Carousel, Slide} from "vue-carousel";
+
+export default {
+    props: ["items"],
+    data() {
+        return {
+            path: `${this.baseUrl}/assets/images/banners`,
+        };
+
+    },
+    components: {
+        Carousel,
+        Slide
+    },
+    methods: {
+        hasLink(d) {
+            return !this.$utils.isEmptyVar(d);
         },
-        components: {
-            Carousel,
-            Slide
+        noLink(d) {
+            return this.$utils.isEmptyVar(d);
         },
-        methods: {
-            hasLink(d) {
-                return !this.$utils.isEmptyVar(d);
-            },
-            noLink(d) {
-                return this.$utils.isEmptyVar(d);
-            },
-            openLink(link) {
-                if (this.hasLink(link)) {
-                    window.open(link, "_blank");
-                }
+        openLink(link) {
+            if (this.hasLink(link)) {
+                window.open(link, "_blank");
             }
-        }
-    };
+        },
+
+        // move(amount) {
+        //   let newActive
+        //   const newIndex = this.active + amount
+        //   if (newIndex > this.slides) newActive = 1
+        //       if (newIndex === 0) newActive = this.slides
+        //           this.active = newActive || newIndex
+        //   },
+        //   jump(index) {
+        //       this.active = index
+        //   },
+    }
+};
 </script>
 
 <style>
 
-    .slider_bck {
-        height: 450px;
-        background-size: cover !important;
-        background-repeat: no-repeat !important;
-    }
 
-    @media only screen and (max-width: 1023px) and (min-width: 920px) {
-        .slider_bck {
-            height: 320px;
-        }
+.slide-left {
+    -webkit-animation: slide-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+    animation: slide-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2019-8-9 10:42:16
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-left
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+100% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+}
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+100% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+}
+}
+
+.tracking-in-contract {
+    -webkit-animation: tracking-in-contract 5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 10s infinite both;
+    animation: tracking-in-contract 5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 10s infinite both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2019-8-9 11:14:11
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation tracking-in-contract
+ * ----------------------------------------
+ */
+ @-webkit-keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+}
+40% {
+    opacity: 0.6;
+}
+100% {
+    letter-spacing: normal;
+    opacity: 1;
+}
+}
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+}
+40% {
+    opacity: 0.6;
+}
+100% {
+    letter-spacing: normal;
+    opacity: 1;
+}
+}
+
+
+
+.slider_bck {
+    height: 450px;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 920px) {
+    .slider_bck {
+        height: 320px;
+    }
+}
+
+.slide-text {
+    padding-bottom: 8px;
+    z-index: 5;
+    text-align: center;
+    margin-top: -178px;
+    position: relative;
+    top: -90px;
+    transition-delay: 5s;
+    transition: ease;
+}
+
+.slide-text h1 {
+    padding-bottom: 10px;
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.slide-text p {
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 20px;
+    color: #fff;
+}
+
+@media only screen and (max-width: 919px) {
+    .slider_bck {
+        height: 240px;
     }
 
     .slide-text {
-        padding-bottom: 8px;
+        top: -50px;
+        padding-bottom: 10px;
         z-index: 5;
+        margin-top: -138px;
         text-align: center;
-        margin-top: -178px;
         position: relative;
-        top: -90px;
-         transition-delay: 5s;
-         transition: ease;
     }
 
     .slide-text h1 {
-        padding-bottom: 10px;
-        font-size: 40px;
+        padding-bottom: 4px;
+        font-size: 18px;
         font-weight: 600;
         color: #fff;
     }
 
     .slide-text p {
-        font-size: 24px;
+        font-size: 14px;
         font-weight: 400;
         padding-bottom: 20px;
         color: #fff;
     }
-
-    @media only screen and (max-width: 919px) {
-        .slider_bck {
-            height: 240px;
-        }
-
-        .slide-text {
-            top: -50px;
-            padding-bottom: 10px;
-            z-index: 5;
-            margin-top: -138px;
-            text-align: center;
-            position: relative;
-        }
-
-        .slide-text h1 {
-            padding-bottom: 4px;
-            font-size: 18px;
-            font-weight: 600;
-            color: #fff;
-        }
-
-        .slide-text p {
-            font-size: 14px;
-            font-weight: 400;
-            padding-bottom: 20px;
-            color: #fff;
-        }
-                .main-btn{
-   padding: 0px 12px;
-    font-size: 12px;
-    line-height: 26px;
+    .main-btn{
+       padding: 0px 12px;
+       font-size: 12px;
+       line-height: 26px;
+   }
 }
-    }
+
+
+.prev,
+.next {
+  position: absolute;
+  top: 40%;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #f89c22;
+  color: #fff;
+  border-radius: 50%;
+  margin-top: -20px;
+  margin-left: 30px;
+  cursor: pointer;
+  line-height: 38px;
+  text-align: center;
+  text-indent: -2px;
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.prev:hover,
+.next:hover {
+  background: #221e21;
+  color: #fff;
+  transform: scale(1.2);
+}
+.prev:active,
+.next:active {
+  transform: translate(0, 3px) scale(1.2);
+}
+
+.next {
+  right: 0;
+  margin-left: auto;
+  margin-right: 30px;
+  text-indent: 2px;
+}
+
+.slides {
+  font-size: 40px;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+@media (min-width: 600px) {
+  .slides {
+    font-size: 80px;
+}
+}
+@media (min-width: 900px) {
+  .slides {
+    font-size: 140px;
+}
+}
+.slides .animated {
+  transition: all 400ms;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+.slides .slide-in {
+  opacity: 0;
+  transform: translate(-40%, -50%);
+}
+.slides .slide-in-active {
+  transition-delay: 150ms;
+}
+.slides .slide-out {
+  opacity: 1;
+}
+.slides .slide-out-active {
+  opacity: 0;
+  transform: translate(-60%, -50%);
+}
+
 </style>

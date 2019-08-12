@@ -41,14 +41,7 @@
 @section('scripts_header')
     {{-- <link rel="stylesheet" href="{{url('/')}}/css/general.css{{$s['fresh_version']}}"> --}}
     <link rel="stylesheet" href="{{url('/')}}/css/vue-multiselect.min.css">  <!--Multi select-->
-    {{--<!--Template CSS-->--}}
-    <link rel=stylesheet href="{{url('/')}}/bundles/general/assets/css/bootstrap.min.css">
-    <!--====== Animate css ======-->
-    <link rel="stylesheet" href="{{url('/')}}/bundles/general/assets/css/animate.css">
-    <!--====== Default css ======-->
-    <link rel="stylesheet" href="{{url('/')}}/bundles/general/assets/css/default.css">
-    <!--====== Style css ======-->
-    <link rel="stylesheet" href="{{url('/')}}/bundles/general/assets/css/style.css">
+    <link rel="stylesheet" href="{{url('/')}}/bundles/general/assets/css/bulma.css">
     <!--====== Responsive css ======-->
     <link rel="stylesheet" href="{{url('/')}}/bundles/general/assets/css/responsive.css">
     {{--<!--Template CSS-->--}}
@@ -57,11 +50,8 @@
 @endsection
 @section('scripts_footer')
     @include('main.general.defaultData')
-    {{--<!--Template JS-->--}}
-    <!--====== Bootstrap js ======-->
-    <script type="text/javascript" src="{{url('/')}}/bundles/general/assets/js/bootstrap.min.js"></script>
     <!--====== Map js ======-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC3Ip9iVC0nIxC6V14CKLQ1HZNF_65qEQ"></script>
+    {{-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC3Ip9iVC0nIxC6V14CKLQ1HZNF_65qEQ"></script> --}}
     <script type="text/javascript" src="{{url('/')}}/bundles/general/assets/js/map-script.js"></script>
     {{--<!--Template JS-->--}}
     <script>
@@ -69,6 +59,6 @@
         window.$ = jQuery;
     </script>
     {{-- @GeneratedResourcesBottom--}}
-    <script type="text/javascript" src="{{url('/bundles/generated/general')}}/general.35172e6b06b705827a41.bundle.js"></script>
+{{--     <script type="text/javascript" src="{{url('/bundles/generated/general')}}/general.35172e6b06b705827a41.bundle.js"></script> --}}
     {{-- @GeneratedResourcesBottom--}}
 @endsection

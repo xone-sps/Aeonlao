@@ -11,10 +11,10 @@ import About from '@com/General/Default/about.vue'
 import News from '@com/General/Default/News.vue'
 import Contact from '@com/General/Default/contact.vue'
 import Activity from '@com/General/Default/activity.vue'
-import Scholarship from '@com/General/Default/scholarship.vue'
+import Service from '@com/General/Default/Service.vue'
 import NewsSingle from '@com/General/Default/Single/NewsSingle.vue'
 import ActivitySingle from '@com/General/Default/Single/ActivitySingle.vue'
-import ScholarshipSingle from '@com/General/Default/Single/ScholarshipSingle.vue'
+import ServiceSingle from '@com/General/Default/Single/ServiceSingle.vue'
 import Institute from '@com/General/Default/Institute.vue'
 import InstituteSingle from '@com/General/Default/Single/InstituteSingle.vue'
 import Document from '@com/General/Default/Document.vue'
@@ -23,7 +23,6 @@ import Document from '@com/General/Default/Document.vue'
 import Home2 from '@com/General/Default/Home2.vue'
 import Promotion from '@com/General/Default/Promotion.vue'
 import Shop from '@com/General/Default/Shop.vue'
-import Service from '@com/General/Default/Service.vue'
 
 
 const jv0ABI4_ch = 'jv0ABI4k2qmWQfLwSapBKfIQe7Lw0xTTVpa0xGG6';
@@ -170,17 +169,6 @@ export default [
         },
     },
 
-              {
-        path: '/service',
-        name: 'service',
-        component: Service,
-        meta: {
-            ...metas.df({
-                hideNavFooter: false,
-            })
-        },
-    },
-
     {
         path: '*', component: Home, meta: {
             ...metas.df({
@@ -239,9 +227,9 @@ export default [
         },
     },
     {
-        path: '/posts/scholarships',
-        name: 'scholarships',
-        component: Scholarship,
+        path: '/posts/service',
+        name: 'service',
+        component: Service,
         meta: {
             ...metas.df({
                 hideNavFooter: false,
@@ -249,9 +237,9 @@ export default [
         },
     },
     {
-        path: '/posts/scholarships/single/:id',
-        name: 'scholarship-single',
-        component: ScholarshipSingle,
+        path: '/posts/Service/single/:id',
+        name: 'service-single',
+        component: ServiceSingle,
         meta: {
             ...metas.df({
                 hideNavFooter: false,

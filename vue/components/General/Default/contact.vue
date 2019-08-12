@@ -68,8 +68,8 @@ export default Base.extend({
   }
 });
 </script>
-<style lang="less" scoped>
-.gmap {
+<style type="text/css" scope>
+  .gmap {
   padding: 6px 6px 0;
   -webkit-border-radius: 8px;
   border-radius: 8px;
@@ -77,5 +77,3 @@ export default Base.extend({
   background-color: #ffffff;
 }
 </style>
-
-

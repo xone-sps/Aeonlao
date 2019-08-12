@@ -11,8 +11,9 @@ import PreviewAssessment from '@com/Admin/Assessments/Preview.vue'
 import ReviewAssessment from '@com/Admin/Assessments/ReviewAssessment.vue'
 import CheckAssessmentSingle from '@com/Admin/Assessments/CheckAssessment/CheckAssessmentSingle.vue'
 
-import Institutes from '@com/Admin/Institutes/All.vue'
-import InstituteCategory from '@com/Admin/Institutes/InstituteCategory.vue'
+import Institutes from '@com/Admin/Shop/All.vue'
+import ShopCategory from '@com/Admin/Shop/ShopCategory.vue'
+import Shop from '@com/Admin/Shop/Shop.vue'
 
 import SiteSetting from '../components/Admin/Default/SiteSetting.vue'
 import ContactInfo from '@com/Admin/Posts/ContactInfo.vue'
@@ -143,10 +144,16 @@ export default [
         component: Institutes,
         meta: metas.authMeta,
     },
+        {
+        name: 'shop',
+        path: `${prefix}/shop`,
+        component: Shop,
+        meta: metas.authMeta,
+    },
     {
-        name: 'institute-category',
-        path: `${prefix}/institute-categories`,
-        component: InstituteCategory,
+        name: 'shopCategory',
+        path: `${prefix}/shop-Category`,
+        component: ShopCategory,
         meta: metas.authMeta,
     },
     {

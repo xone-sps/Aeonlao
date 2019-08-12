@@ -113,23 +113,30 @@
                     {
                         contentHeader: {
                             expanded: true,
-                            name: "ຂໍ້ມູນສະຖານການສຶກສາ",
-                            description: "ຈັດການຂໍ້ມູນສະຖານການສຶກສາ, ປະເພດສະຖານການສຶກສາ",
+                            name: "Shop Information",
+                            description: "Manage shop, shop category",
                             icon: "keyboard_arrow_up"
                         },
                         items: [
                             {
-                                name: "ໝວດໝູ່ສະຖານການສຶກສາ",
+                                name: "shopCategory",
                                 icon: "category",
                                 action: this.Route,
-                                params: {name: "institute-category"}
-                            }
+                                params: {name: "shopCategory"}
+                            },
+                                                        {
+                                name: "Shop", //required
+                                icon: "business", //required
+                                action: this.Route, //required
+                                params: {name: "shop"} //required
+                            },
+
                         ]
                     },
                     {
                         contentHeader: {
                             expanded: true,
-                            name: "ຂໍ້ມູນບົດປະເມີນ",
+                            name: "Job recruitment",
                             description: "ຈັດການຂໍ້ມູນບົດປະເມີນ, ບົດປະເມີນທີ່ກວດສອບແລ້ວ",
                             icon: "keyboard_arrow_up"
                         },
@@ -164,25 +171,25 @@
                     {
                         contentHeader: {
                             expanded: true,
-                            name: "ຂໍ້ມູນຂ່າວສານ",
-                            description: "ຈັດການຂໍ້ມູນຂ່າວສານ",
+                            name: "Post information",
+                            description: "Manage news, activity, service",
                             icon: "keyboard_arrow_up"
                         },
                         items: [
                             {
-                                name: "ຂ່າວສານ", //required
+                                name: "News", //required
                                 icon: "rss_feed", //required
                                 action: this.Route, //required
                                 params: {name: "news"} //required
                             },
                             {
-                                name: "ກິດຈະກຳ", //required
+                                name: "Activity", //required
                                 icon: "list_alt", //required
                                 action: this.Route, //required
                                 params: {name: "activity"} //required
                             },
                             {
-                                name: "ທຶນການສຶກສາ", //required
+                                name: "Service", //required
                                 icon: "school", //required
                                 action: this.Route, //required
                                 params: {name: "scholarship"} //required
@@ -191,25 +198,25 @@
                     {
                         contentHeader: {
                             expanded: true,
-                            name: "ຂໍ້ມູນເວບໄຊ",
-                            description: "ຈັດການຂໍ້ມູນພື້ນຖານເວບໄຊ",
+                            name: "Site info",
+                            description: "Manage site info",
                             icon: "keyboard_arrow_up"
                         },
                         items: [
                             {
-                                name: "ໂລໂກ້ ແລະ ແບຣນເນີ້", //required
+                                name: "Logo & banner", //required
                                 icon: "settings", //required
                                 action: this.Route, //required
                                 params: {name: "sitesetting"} //required
                             },
                             {
-                                name: "ຂໍ້ມູນກ່ຽວກັບ", //required
+                                name: "About", //required
                                 icon: "business", //required
                                 action: this.Route, //required
                                 params: {name: "about-us"} //required
                             },
                             {
-                                name: "ຂໍ້ມູນຕິດຕໍ່", //required
+                                name: "Site Contact", //required
                                 icon: "call", //required
                                 action: this.Route, //required
                                 params: {name: "contactinfo"} //required
@@ -221,7 +228,7 @@
                             //     params: {name: "sponsor"} //required
                             // },
                             {
-                                name: "ອັບໂຫລດຟາຍຕ່າງໆ", //required
+                                name: "File upload", //required
                                 icon: "cloud_upload", //required
                                 action: this.Route, //required
                                 params: {name: "uploadfile"} //required

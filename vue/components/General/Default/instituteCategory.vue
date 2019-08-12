@@ -1,42 +1,45 @@
 <template>
   <div>
-    <section id="category-part">
+    <section class="section">
       <div class="container">
-        <div class="category pt-20 pb-20">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="category-text text-center">
-                <h2>ໝວດໝູ່ສະຖານການສຶກສາ</h2>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="category">
+          <div class="culumns">
+            <div class="column is-12 is-mobile">
               <carousel
-                :per-page="4"
-                :mouse-drag="true"
-                :autoplay="true"
-                :autoplayHoverPause="false"
-                :autoplayTimeout="5000"
-                :paginationEnabled="true"
-                :speed="500"
-                :loop="true"
+              :per-page="3"
+              :mouse-drag="true"
+              :autoplay="true"
+              :autoplayHoverPause="false"
+              :autoplayTimeout="9000"
+              :paginationEnabled="true"
+              :speed="900"
+              :loop="true"
+              :paginationPadding="1"
+              :paginationSize="8"
+              :navigationEnabled="true"
+              :navigationPrevLabel='`<span class="prev"> <i class="fa fa-chevron-left aria-hidden="true""></i>
+            </span>`'
+            :navigationNextLabel='`<span class="next"><i class="fa fa-chevron-right" aria-hidden="true"></i</span>`'
               >
-                <slide v-for="(cat, index) in homeData.instituteCategoriesHome" :key="index">
-                  <a @click="Route({name: 'institute', query: {category_id: cat.id}})">
-                    <span class="singel-category text-center color-1">
-                      <span class="icon">
-                        <img
-                          :src="`${baseUrl}${baseRes}assets/images/all-icon/ctg-3.png`"
-                          alt="Icon"
-                        >
-                      </span>
-                      <span class="cont">
-                        <span>{{cat.name}}</span>
-                      </span>
+              <slide v-for="(cat, index) in homeData.instituteCategoriesHome" :key="index">
+                <div class="card slider">
+                  <span class="pro-category is-center">
+                    <div>
+                      <a @click="Route({name: 'institute', query: {category_id: cat.id}})">
+                        <span class="icon-pro">
+                           <!--  <img
+                            :src="`${baseUrl}${baseRes}assets/images/all-icon/ctg-3.png`"
+                            alt="Icon"
+                            > -->
+                            <img src="/assets/images/Kredit-AEON.png" alt="">
+                          </span>
+                        </a>
+                      </div>
+                      <div class="pro-name">
+                        <p @click="Route({name: 'institute', query: {category_id: cat.id}})">{{cat.name}}</p>
+                      </div>
                     </span>
-                    <!-- single category -->
-                  </a>
+                  </div>
                 </slide>
               </carousel>
               <!--====== SLIDER PART ENDS ======-->
@@ -65,11 +68,27 @@ export default Base.extend({
 });
 </script>
 
-<style>
+<style scope>
+.slider{
+  padding-right: 4px;
+}
 .slider_bck {
   height: 450px;
   background-size: cover !important;
   background-repeat: no-repeat !important;
+}
+
+.icon-pro img{
+  width: 200px;
+  height: 100px;
+}
+.pro-category{
+  text-align: center;
+}
+.pro-name{
+  font-size: 14px;
+  font-weight: 400;
+  color: #7461cf;
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 920px) {
@@ -136,5 +155,49 @@ export default Base.extend({
     font-size: 12px;
     line-height: 26px;
   }
+  .icon-pro img{
+    width: 100px;
+    height: 50px;
+    width: 100px;
+    height: 64px;
+    padding: 0px 8px 4px 0px;
+  }
+}
+
+
+
+.prev,
+.next {
+position: absolute;
+    top: 30%;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #7461cf;
+    color: #fff;
+    border-radius: 50%;
+    margin-top: -30px;
+    margin-left: -36px;
+    cursor: pointer;
+    line-height: 26px;
+    text-align: center;
+    text-indent: -2px;
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.prev:hover,
+.next:hover {
+  background: #221e21;
+  color: #fff;
+  transform: scale(1.2);
+}
+.prev:active,
+.next:active {
+  transform: translate(0, 3px) scale(1.2);
+}
+
+.next {
+  right: 0;
+  margin-left: auto;
+  margin-right: -28px;
+  text-indent: 2px;
 }
 </style>

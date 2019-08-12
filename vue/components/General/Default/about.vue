@@ -1,7 +1,7 @@
 <template>
   <div>
     <!--====== ABOUT PART START ======-->
-    <section id="about-page" class="pb-30 gray-bg">
+    <section id="about-page" class="top_100">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">

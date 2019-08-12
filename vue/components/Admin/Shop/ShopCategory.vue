@@ -149,9 +149,6 @@
 
                                     </div>
                                 </div>
-
-
-
                                 <div class="user-form-action provider-list-actions layout-align-end-center layout-row">
                                     <button
                                         @click="toggleFormRowContent(fireEvent, position, {active: false})"
