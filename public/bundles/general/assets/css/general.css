@@ -1,5 +1,7 @@
 
-
+.hidden{
+    display: inline-block !important;
+}
 .tobbar{
 	font-size: 12px;
     background-color: #7461CF;
@@ -496,7 +498,7 @@ font-size: 15px;
     .date-post{
         font-size: 12px;
         font-weight: 200;
-        padding: 14px 18px 14px 18px;
+        padding: 8px 0px 0px 0px;
     }
     .date-post-detail{
         font-size: 14px;
@@ -518,5 +520,5 @@ font-size: 15px;
         cursor: pointer;
     }
 .card-content{
-    padding: 6px;
+    padding: 18px;
 }

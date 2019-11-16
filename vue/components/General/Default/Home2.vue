@@ -1,178 +1,1095 @@
 <template>
 	<div>
-		<div class="top_66">
-			<carousels class="top-40" :items="homeData.banners"/>
-		</div>
-		<div id="get_quote">
-			<section class="section">
-				<div class="container">
-					<div class="columns">
-						<div class="column is-9">
-							<h3>Looking for a Promotion shop? </h3>
-							<InstituteCategory/>
-						</div>
-						<div class="column is-3">
-							<!-- 					<a href="quotation_wizard.html" class="btn_quote">Get Promotion</a> -->
-							<div class="button_cont btn_quote" align="center">
-								<a class="main_b shadow-drop-center" href="add-website-here" target="_blank">Get Promotion</a>
-							</div>
-						</div>
-					</div><!-- End row -->
-				</div><!-- End container -->
-			</section>
-		</div>
+	<section class="site-container">	
+		<div class="top-graphic">
+<!-- 			<div class="owl-carousel">
 
-		<div id="feat_home">
-			<section class="section">
-				<div class="container">
+				<div class="item">
+					<a href="#" class="link">
+						<figure class="cover" style="background-image: url(image/upload/top-graphic.jpg)"></figure>
+					</a>
 				</div>
-				<div class="container margin_15_25">
-					<div class="main_title">
-						<h3>Our services</h3>
-					</div>						
-					<div class="columns">
-						<div class="column is-4">
-							<div class="box_feat">
-								<span><img src="/assets/images/Kredit-AEON.png" alt=""></span>
-								<h3>Full Protection</h3>
-								<p>Lorem ipsum dolor sit amet, no movet simul laoreet pri, aperiri fabulas expetenda ei pro. Sed vero assentior ad, est vide liber viris ne. Mea saperet evertitur intellegebat ei, an labore cetero eos.</p>
-							</div>
-						</div>
-						<div class="column is-4">
-							<div class="box_feat">
-								<span><img src="/assets/images/credit.jpg" alt=""></span>
-								<h3>Management via App</h3>
-								<p>Mea saperet evertitur intellegebat ei, an labore cetero eos. Quo no facilisis contentiones, enim graeci vim ea, justo graecis ne qui. His tation theophrastus intellegebat ut, hinc fierent nam ea.</p>
-							</div>
-						</div>
-												<div class="column is-4">
-							<div class="box_feat">
-								<span><img src="/assets/images/credit.jpg" alt=""></span>
-								<h3>Management via App</h3>
-								<p>Mea saperet evertitur intellegebat ei, an labore cetero eos. Quo no facilisis contentiones, enim graeci vim ea, justo graecis ne qui. His tation theophrastus intellegebat ut, hinc fierent nam ea.</p>
-							</div>
-						</div>
-					</div><!-- End row -->
-
+				<div class="item">
+					<a href="#" class="link">
+						<figure class="cover" style="background-image: url(image/upload/top-graphic.jpg)"></figure>
+					</a>
 				</div>
-			</section>
-		</div>
-
-
-<section class="section">
-	<div class="container">
-		<div class="columns">
-		<div class="column is-3">
-			<div class="image">
-				<img src="/assets/images/Kredit-AEON.png" alt="">
-			</div>
-			<div class="contents">
-				<h3>TWheelchair Race | Funny Clip | Johnny English Reborn | Mr Bean Official</h3>
-				<div class="detail">
-					<p>Post date 3/8/2019</p>
+				<div class="item">
+					<a href="#" class="link">
+						<figure class="cover" style="background-image: url(image/upload/top-graphic.jpg)"></figure>
+					</a>
 				</div>
-			</div>
-		</div>
-				<div class="column is-3">
-							<div class="image">
-		<img src="/assets/images/posts/service.jpg" alt="">
-	</div>
-		</div>
-				<div class="column is-3">
-							<div class="image">
-			<img src="/assets/images/Kredit-AEON.png" alt="">
-		</div>
-		</div>
-				<div class="column is-3">
-							<div class="image">
-			<img src="/assets/images/Kredit-AEON.png" alt="">
-		</div>
-		</div>
-	</div>
-	</div>
-</section>
 
-
-		<section class="section">
+			</div> -->
+			<carousels :items="homeData.banners"/>
+		</div>
+		
+		<div class="wg-product">
 			<div class="container">
-				<div class="main_title">
-					<h3>News</h3>
-					<p>
-						<a href="tips.html" class="link_normal" style="float:right; margin-top:-24px;">More  <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-					</p>
-				</div>
-				<hr style="margin-top:2px;">
-			</div>
-		</section>
-		<section class="section">
-			<div class="container">
-				<div class="columns">
-					<div class="column is-4 news">
-						<figure class="animated"><a href="service_1.html">
-							<img src="/assets/images/posts/service.jpg" alt="" class="img-responsive"></a></figure>
-							<h3>Wiring installation</h3>
-							<!-- <p>
-								Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus.
-							</p> -->
-						</div>
-						<div class="column is-4 news">
-							<figure class="animated"><a href="service_2.html">
-								<img src="/assets/images/posts/service2.jpg" alt="" class="img-responsive"></a></figure>
-								<h3>Security Plan</h3>
-								<!-- <p>
-									Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus.
-								</p> -->
-							</div>
-							<div class="column is-4">
-								<figure class="animated"><a href="service_3.html">
-									<img src="/assets/images/posts/service3.jpg" alt="" class="img-responsive"></a></figure>
-									<h3>Security Check</h3>
-									<!-- <p>
-										Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus.
-									</p> -->
-								</div>	
+				  <InstituteCategory/>
+				<div class="row-table">
+					<div class="col">
+						<div class="whead">
+							<div class="row-table">
+								<div class="col-auto">
+									<div class="wh-icon"><img src="image/icon/wh-icon1.png" alt="icon"></div>
+								</div>
+								<div class="col">
+									<h4 class="title text-light">Pro<span class="color">duct</span></h4>
+								</div>
 							</div>
 						</div>
-					</section>
-<!-- 					<section class="section">
-						<div class="container">
-							<h3 style="margin-top:-24px;">Activity</h3>
-							<p style="padding-bottom: 8px;margin-top: -20px;">
-								<a href="tips.html" class="link_normal" style="float:right;">Read more activity <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-							</p>
-						</div>
-					</section> -->
-					<hr>
-					<div id="feat_home">
-						<section class="section">
-							<div class="container margin_15_25">
-				<div class="main_title">
-					<h3>Job Recruiment</h3>
-					<p>
-						<a href="tips.html" class="link_normal" style="float:right; margin-top:-24px;">More  <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-					</p>
-				</div>
-								<div class="columns">
-									<div class="column is-6">
-										<div class="box_feat">
-											<span><img src="/assets/images/Kredit-AEON.png" alt=""></span>
-											<h3>Full Protection</h3>
-											<p>Lorem ipsum dolor sit amet, no movet simul laoreet pri, aperiri fabulas expetenda ei pro. Sed vero assentior ad, est vide liber viris ne. Mea saperet evertitur intellegebat ei, an labore cetero eos.</p>
-										</div>
-									</div>
-									<div class="column is-6">
-										<div class="box_feat">
-											<span><img src="/assets/images/credit.jpg" alt=""></span>
-											<h3>Management via App</h3>
-											<p>Mea saperet evertitur intellegebat ei, an labore cetero eos. Quo no facilisis contentiones, enim graeci vim ea, justo graecis ne qui. His tation theophrastus intellegebat ut, hinc fierent nam ea.</p>
-										</div>
-									</div>
-								</div><!-- End row -->
-
-							</div>
-						</section>
 					</div>
+					<div class="col-auto">
+						<div class="btn-block">
+							<a href="#" class="btn btn-secondary">VIEW ALL</a>
+						</div>
+					</div>
+				</div>
+				<div class="product-block">
+					<div class="slick">
 
+						<div>
+							<div class="item">
+								<a href="#" class="link">
+									<figure class="cover" style="background-image: url(image/upload/product-cate1.jpg)">
+										<img src="image/cover/product-cover.png" alt="cover">
+									</figure>
+									<h6 class="title">TELEPHONE</h6>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="item">
+								<a href="#" class="link">
+									<figure class="cover" style="background-image: url(image/upload/product-cate2.jpg)">
+										<img src="image/cover/product-cover.png" alt="cover">
+									</figure>
+									<h6 class="title">ELECTRONIC</h6>
+								</a>
+							</div>
+						</div>
+						<div class="no-item">
+							<div class="item">
+								<figure class="cover" style="background-color:#55118F">
+									<img src="image/cover/product-cover.png" alt="cover">
+								</figure>
+								<h6 class="title">NONE</h6>
+							</div>
+						</div>
+						<div>
+							<div class="item">
+								<a href="#" class="link">
+									<figure class="cover" style="background-image: url(image/upload/product-cate3.jpg)">
+										<img src="image/cover/product-cover.png" alt="cover">
+									</figure>
+									<h6 class="title">BAG</h6>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="item">
+								<a href="#" class="link">
+									<figure class="cover" style="background-image: url(image/upload/product-cate4.jpg)">
+										<img src="image/cover/product-cover.png" alt="cover">
+									</figure>
+									<h6 class="title">TIRE</h6>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="item">
+								<a href="#" class="link">
+									<figure class="cover" style="background-image: url(image/upload/product-cate5.jpg)">
+										<img src="image/cover/product-cover.png" alt="cover">
+									</figure>
+									<h6 class="title">sports equipment</h6>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="item">
+								<a href="#" class="link">
+									<figure class="cover" style="background-image: url(image/upload/product-cate1.jpg)">
+										<img src="image/cover/product-cover.png" alt="cover">
+									</figure>
+									<h6 class="title">TELEPHONE</h6>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="item">
+								<a href="#" class="link">
+									<figure class="cover" style="background-image: url(image/upload/product-cate2.jpg)">
+										<img src="image/cover/product-cover.png" alt="cover">
+									</figure>
+									<h6 class="title">ELECTRONIC</h6>
+								</a>
+							</div>
+						</div>
+						<div class="no-item">
+							<div class="item">
+								<figure class="cover" style="background-color:#55118F">
+									<img src="image/cover/product-cover.png" alt="cover">
+								</figure>
+								<h6 class="title">NONE</h6>
+							</div>
+						</div>
+						<div>
+							<div class="item">
+								<a href="#" class="link">
+									<figure class="cover" style="background-image: url(image/upload/product-cate3.jpg)">
+										<img src="image/cover/product-cover.png" alt="cover">
+									</figure>
+									<h6 class="title">BAG</h6>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="item">
+								<a href="#" class="link">
+									<figure class="cover" style="background-image: url(image/upload/product-cate4.jpg)">
+										<img src="image/cover/product-cover.png" alt="cover">
+									</figure>
+									<h6 class="title">TIRE</h6>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="item">
+								<a href="#" class="link">
+									<figure class="cover" style="background-image: url(image/upload/product-cate5.jpg)">
+										<img src="image/cover/product-cover.png" alt="cover">
+									</figure>
+									<h6 class="title">sports equipment</h6>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="item">
+								<a href="#" class="link">
+									<figure class="cover" style="background-image: url(image/upload/product-cate1.jpg)">
+										<img src="image/cover/product-cover.png" alt="cover">
+									</figure>
+									<h6 class="title">TELEPHONE</h6>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="item">
+								<a href="#" class="link">
+									<figure class="cover" style="background-image: url(image/upload/product-cate2.jpg)">
+										<img src="image/cover/product-cover.png" alt="cover">
+									</figure>
+									<h6 class="title">ELECTRONIC</h6>
+								</a>
+							</div>
+						</div>
+						<div class="no-item">
+							<div class="item">
+								<figure class="cover" style="background-color:#55118F">
+									<img src="image/cover/product-cover.png" alt="cover">
+								</figure>
+								<h6 class="title">NONE</h6>
+							</div>
+						</div>
+						<div>
+							<div class="item">
+								<a href="#" class="link">
+									<figure class="cover" style="background-image: url(image/upload/product-cate3.jpg)">
+										<img src="image/cover/product-cover.png" alt="cover">
+									</figure>
+									<h6 class="title">BAG</h6>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="item">
+								<a href="#" class="link">
+									<figure class="cover" style="background-image: url(image/upload/product-cate4.jpg)">
+										<img src="image/cover/product-cover.png" alt="cover">
+									</figure>
+									<h6 class="title">TIRE</h6>
+								</a>
+							</div>
+						</div>
+						<div>
+							<div class="item">
+								<a href="#" class="link">
+									<figure class="cover" style="background-image: url(image/upload/product-cate5.jpg)">
+										<img src="image/cover/product-cover.png" alt="cover">
+									</figure>
+									<h6 class="title">sports equipment</h6>
+								</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- #promotion -->
+		<div class="wg-promotion">
+			<div class="container">
+				<div class="row-table">
+					<div class="column">
+						<div class="whead">
+							<div class="row-table">
+								<div class="col-auto">
+									<div class="wh-icon"><img src="image/icon/wh-icon2.png" alt="icon"></div>
+								</div>
+								<div class="col">
+									<h4 class="title">Promo<span class="color">tion</span></h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-auto">
+						<div class="btn-block">
+							<a href="#" class="btn btn-primary">VIEW ALL</a>
+						</div>
+					</div>
+				</div>
+				<div class="promotion-block">
+					<promotion/>
+					<div class="owl-carousel">
+						<div class="item">
+							<a href="#" class="link">
+								<figure class="cover" style="background-image: url(image/upload/promotion-slide1.jpg)">
+									<img src="image/cover/promotion-slide-cover.png" alt="cover">
+								</figure>
+							</a>
+						</div>
+						<div class="item">
+							<a href="#" class="link">
+								<figure class="cover" style="background-image: url(image/upload/promotion-slide2.jpg)">
+									<img src="image/cover/promotion-slide-cover.png" alt="cover">
+								</figure>
+							</a>
+						</div>
+						<div class="item">
+							<a href="#" class="link">
+								<figure class="cover" style="background-image: url(image/upload/promotion-slide3.jpg)">
+									<img src="image/cover/promotion-slide-cover.png" alt="cover">
+								</figure>
+							</a>
+						</div>
+						<div class="item">
+							<a href="#" class="link">
+								<figure class="cover" style="background-image: url(image/upload/promotion-slide1.jpg)">
+									<img src="image/cover/promotion-slide-cover.png" alt="cover">
+								</figure>
+							</a>
+						</div>
+						<div class="item">
+							<a href="#" class="link">
+								<figure class="cover" style="background-image: url(image/upload/promotion-slide2.jpg)">
+									<img src="image/cover/promotion-slide-cover.png" alt="cover">
+								</figure>
+							</a>
+						</div>
+						<div class="item">
+							<a href="#" class="link">
+								<figure class="cover" style="background-image: url(image/upload/promotion-slide3.jpg)">
+									<img src="image/cover/promotion-slide-cover.png" alt="cover">
+								</figure>
+							</a>
+						</div>
+						<div class="item">
+							<a href="#" class="link">
+								<figure class="cover" style="background-image: url(image/upload/promotion-slide1.jpg)">
+									<img src="image/cover/promotion-slide-cover.png" alt="cover">
+								</figure>
+							</a>
+						</div>
+						<div class="item">
+							<a href="#" class="link">
+								<figure class="cover" style="background-image: url(image/upload/promotion-slide2.jpg)">
+									<img src="image/cover/promotion-slide-cover.png" alt="cover">
+								</figure>
+							</a>
+						</div>
+						<div class="item">
+							<a href="#" class="link">
+								<figure class="cover" style="background-image: url(image/upload/promotion-slide3.jpg)">
+									<img src="image/cover/promotion-slide-cover.png" alt="cover">
+								</figure>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="wg-service">
+			<div class="container">
+				<div class="row-table">
+					<div class="col">
+						<div class="whead">
+							<div class="row-table">
+								<div class="col-auto">
+									<div class="wh-icon"><img src="image/icon/wh-icon3.png" alt="icon"></div>
+								</div>
+								<div class="col">
+									<h4 class="title text-light">Ser<span class="color">vice</span></h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-auto">
+						<div class="btn-block">
+							<a href="#" class="btn btn-secondary">VIEW ALL</a>
+						</div>
+					</div>
+				</div>
+				<div class="service-block">
+					<div class="owl-carousel">
+						<div class="item">
+							<div class="row-table">
+								<div class="col-auto">
+									<div class="smartcard">
+										<img src="image/upload/service-card.png" alt="service-card">
+									</div>
+								</div>
+								<div class="col">
+									<div class="content">
+										<h6 class="title overflow-line-1">Membership card has special privileges on rates</h6>
+										<p class="desc overflow-line-2">
+											Interest on installments And discounts at stores Participating in the program when
+											Interest on installments And discounts at stores Participating in the program when
+										</p>
+										<div class="btn-box">
+											<a href="#" class="btn btn-light">Read More</a>
+											<a href="#" class="btn btn-warning">Register</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="row-table">
+								<div class="col-auto">
+									<div class="smartcard">
+										<img src="image/upload/service-card.png" alt="service-card">
+									</div>
+								</div>
+								<div class="col">
+									<div class="content">
+										<h6 class="title overflow-line-1">Membership card has special privileges on rates</h6>
+										<p class="desc overflow-line-2">
+											Interest on installments And discounts at stores Participating in the program when
+											Interest on installments And discounts at stores Participating in the program when
+										</p>
+										<div class="btn-box">
+											<a href="#" class="btn btn-light">Read More</a>
+											<a href="#" class="btn btn-warning">Register</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="row-table">
+								<div class="col-auto">
+									<div class="smartcard">
+										<img src="image/upload/service-card.png" alt="service-card">
+									</div>
+								</div>
+								<div class="col">
+									<div class="content">
+										<h6 class="title overflow-line-1">Membership card has special privileges on rates</h6>
+										<p class="desc overflow-line-2">
+											Interest on installments And discounts at stores Participating in the program when
+											Interest on installments And discounts at stores Participating in the program when
+										</p>
+										<div class="btn-box">
+											<a href="#" class="btn btn-light">Read More</a>
+											<a href="#" class="btn btn-warning">Register</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="wg-benefits">
+			<div class="container">
+				<div class="row-table">
+					<div class="col">
+						<div class="whead">
+							<div class="row-table">
+								<div class="col-auto">
+									<div class="wh-icon"><img src="image/icon/wh-icon4.png" alt="icon"></div>
+								</div>
+								<div class="col">
+									<h4 class="title">Benefits from membership cards</h4>
+									<h5 class="sub-title">ສິດຜົນປະໂຫຍດສຳລັບສະມາຊິກ AEON</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-auto">
+						<div class="btn-block">
+							<a href="#" class="btn btn-primary">VIEW ALL</a>
+						</div>
+					</div>
+				</div>
+				<div class="benefits-block">
+					<div class="slider-nav">
+						<div class="owl-carousel">
+							<div>
+								<a class="nav-item link active" data-toggle="tab" href="#tab-1">
+									<figure class="cover" style="background-image: url(image/upload/benefits-navicon1.png)">
+										<img src="image/cover/square-cover.png" alt="cover">
+									</figure>
+									<div class="title">All</div>
+								</a>
+							</div>
+							<div>
+								<a class="nav-item link" data-toggle="tab" href="#tab-2">
+									<figure class="cover" style="background-image: url(image/upload/benefits-navicon2.png)">
+										<img src="image/cover/square-cover.png" alt="cover">
+									</figure>
+									<div class="title">Air Conditioner</div>
+								</a>
+							</div>
+							<div>
+								<a class="nav-item link" data-toggle="tab" href="#tab-3">
+									<figure class="cover" style="background-image: url(image/upload/benefits-navicon3.png)">
+										<img src="image/cover/square-cover.png" alt="cover">
+									</figure>
+									<div class="title">Audio</div>
+								</a>
+							</div>
+							<div>
+								<a class="nav-item link" data-toggle="tab" href="#tab-4">
+									<figure class="cover" style="background-image: url(image/upload/benefits-navicon4.png)">
+										<img src="image/cover/square-cover.png" alt="cover">
+									</figure>
+									<div class="title">Bag</div>
+								</a>
+							</div>
+							<div>
+								<a class="nav-item link" data-toggle="tab" href="#tab-5">
+									<figure class="cover" style="background-image: url(image/upload/benefits-navicon5.png)">
+										<img src="image/cover/square-cover.png" alt="cover">
+									</figure>
+									<div class="title">CCTV</div>
+								</a>
+							</div>
+							<div>
+								<a class="nav-item link active" data-toggle="tab" href="#tab-1">
+									<figure class="cover" style="background-image: url(image/upload/benefits-navicon1.png)">
+										<img src="image/cover/square-cover.png" alt="cover">
+									</figure>
+									<div class="title">All</div>
+								</a>
+							</div>
+							<div>
+								<a class="nav-item link" data-toggle="tab" href="#tab-2">
+									<figure class="cover" style="background-image: url(image/upload/benefits-navicon2.png)">
+										<img src="image/cover/square-cover.png" alt="cover">
+									</figure>
+									<div class="title">Air Conditioner</div>
+								</a>
+							</div>
+							<div>
+								<a class="nav-item link" data-toggle="tab" href="#tab-3">
+									<figure class="cover" style="background-image: url(image/upload/benefits-navicon3.png)">
+										<img src="image/cover/square-cover.png" alt="cover">
+									</figure>
+									<div class="title">Audio</div>
+								</a>
+							</div>
+							<div>
+								<a class="nav-item link" data-toggle="tab" href="#tab-4">
+									<figure class="cover" style="background-image: url(image/upload/benefits-navicon4.png)">
+										<img src="image/cover/square-cover.png" alt="cover">
+									</figure>
+									<div class="title">Bag</div>
+								</a>
+							</div>
+							<div>
+								<a class="nav-item link" data-toggle="tab" href="#tab-5">
+									<figure class="cover" style="background-image: url(image/upload/benefits-navicon5.png)">
+										<img src="image/cover/square-cover.png" alt="cover">
+									</figure>
+									<div class="title">CCTV</div>
+								</a>
+							</div>
+							<div>
+								<a class="nav-item link active" data-toggle="tab" href="#tab-1">
+									<figure class="cover" style="background-image: url(image/upload/benefits-navicon1.png)">
+										<img src="image/cover/square-cover.png" alt="cover">
+									</figure>
+									<div class="title">All</div>
+								</a>
+							</div>
+							<div>
+								<a class="nav-item link" data-toggle="tab" href="#tab-2">
+									<figure class="cover" style="background-image: url(image/upload/benefits-navicon2.png)">
+										<img src="image/cover/square-cover.png" alt="cover">
+									</figure>
+									<div class="title">Air Conditioner</div>
+								</a>
+							</div>
+							<div>
+								<a class="nav-item link" data-toggle="tab" href="#tab-3">
+									<figure class="cover" style="background-image: url(image/upload/benefits-navicon3.png)">
+										<img src="image/cover/square-cover.png" alt="cover">
+									</figure>
+									<div class="title">Audio</div>
+								</a>
+							</div>
+							<div>
+								<a class="nav-item link" data-toggle="tab" href="#tab-4">
+									<figure class="cover" style="background-image: url(image/upload/benefits-navicon4.png)">
+										<img src="image/cover/square-cover.png" alt="cover">
+									</figure>
+									<div class="title">Bag</div>
+								</a>
+							</div>
+							<div>
+								<a class="nav-item link" data-toggle="tab" href="#tab-5">
+									<figure class="cover" style="background-image: url(image/upload/benefits-navicon5.png)">
+										<img src="image/cover/square-cover.png" alt="cover">
+									</figure>
+									<div class="title">CCTV</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="slider-for">
+						<div class="tab-content">
+							<div class="tab-pane fade in active" id="tab-1">
+								<div class="owl-carousel">
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide1.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide2.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide3.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide4.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide1.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide2.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide3.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide4.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide1.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide2.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide3.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide4.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="tab-2">
+								<div class="owl-carousel">
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide1.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide2.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide3.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide4.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide1.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide2.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide3.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide4.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide1.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide2.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide3.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide4.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="tab-3">
+								<div class="owl-carousel">
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide1.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide2.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide3.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide4.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide1.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide2.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide3.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide4.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide1.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide2.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide3.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide4.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="tab-4">
+								<div class="owl-carousel">
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide1.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide2.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide3.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide4.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide1.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide2.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(public/image/upload/benefits-slide3.jpg)">
+												<img src="public/image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(public/image/upload/benefits-slide4.jpg)">
+												<img src="public/image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(public/image/upload/benefits-slide1.jpg)">
+												<img src="public/image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(public/image/upload/benefits-slide2.jpg)">
+												<img src="public/image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(public/image/upload/benefits-slide3.jpg)">
+												<img src="public/image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(public/image/upload/benefits-slide4.jpg)">
+												<img src="public/image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="tab-5">
+								<div class="owl-carousel">
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(public/image/upload/benefits-slide1.jpg)">
+												<img src="public/image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(public/image/upload/benefits-slide2.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide3.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide4.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide1.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide2.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide3.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide4.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide1.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide2.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide3.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+									<div class="item">
+										<a href="#" class="link">
+											<figure class="cover" style="background-image: url(image/upload/benefits-slide4.jpg)">
+												<img src="image/cover/benefits-slide-cover.png" alt="cover">
+											</figure>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="social-list">
+							<ul class="item-list">
+								<li class="facebook"><a href="#" target="_blank" class="link"><span class="fab fa-facebook-f"></span></a></li>
+								<li class="google"><a href="#" target="_blank" class="link"><span class="fab fa-google-plus-g"></span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="wg-member-shop">
+			<div class="container">
+				<div class="whead">
+					<div class="row-table">
+						<div class="col">
+							<h4 class="title"><strong>AEON</strong> Member shop</h4>
+							<h5 class="sub-title">ຮ້ານຄ້າຕົວແທນອິອອນ</h5>
+							<div class="desc">Interested in becoming a club shop representative</div>
+							<div class="btn-box">
+								<a href="#" class="btn btn-warning">Apply as an agent</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="wg-location">
+			<div class="container">
+				<div class="whead">
+					<h4 class="title"><strong>AEON</strong> service network</h4>
+					<h5 class="sub-title">ສຳນັກງານອິອອນ</h5>
+					<div class="desc">Our service points will help you find the location of the automatic cash machine.</div>
+					<div class="btn-box">
+						<a href="#" class="btn btn-warning">Service network</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="wg-dealer">
+			<div class="container">
+				<div class="whead">
+					<h4 class="title"><strong>AEON</strong> Member shop</h4>
+					<h5 class="sub-title">ຮ້ານຄ້າຕົວແທນອິອອນ</h5>
+					<div class="desc">ສົນໃຈເຂົ້າຮ່ວມເປັນຕົວແທນກັບເຮົາ</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 col-md-4 col-sm-12 col-xs-12 col-vxs-12">
+						<a href="#" class="link">
+							<div class="banner-box" style="background-image: url(image/upload/dealer1.jpg)">
+								<div class="title">
+									<p>ຕົວແທນຮ້ານຄ້າທີ່ສາມາດ</p>
+									<p style="color: #f9a61a;">ຜ່ອນອິອອນໄດ້</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 col-vxs-12">
+						<a href="#" class="link">
+							<div class="banner-box" style="background-image: url(image/upload/dealer2.jpg)">
+								<div class="title">
+									<strong>APPLY AS AN</strong><br>
+									<strong style="color: #f9a61a;">AEON DEALER</strong>
+									<p>ສະໝັກເປັນຮ້ານຄ້າຕົວແທນອິອອນ</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 col-vxs-12">
+						<a href="#" class="link">
+							<div class="banner-box" style="background-image: url(image/upload/dealer3.jpg)">
+								<div class="title">
+									<strong>Con<span style="color: #f9a61a;">tact</span></strong>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+	</section>
 				</div>
 			</template>
 
@@ -181,6 +1098,7 @@
 			import {Carousel, Slide} from "vue-carousel";
 			import Carousels from "@com/General/Partial/Carousel.vue";
 			import InstituteCategory from "@com/General/Default/instituteCategory.vue";
+			import Promotion from "@com/General/Default/Slider/Promotion.vue"
 			import Sponsor from "@com/General/Default/Sponsor.vue";
 			import ContactForm from "@com/General/ContactForm.vue";
 			import Base from "@com/Bases/GeneralBase.js";
@@ -197,7 +1115,8 @@
 					Slide,
 					ContactForm,
 					Sponsor,
-					InstituteCategory
+					InstituteCategory,
+					Promotion
 				},
 				created() {
 					this.setPageTitle(`Home`);
@@ -277,5 +1196,43 @@
  		box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
  	}
  }
+
+ .card.service{
+ 	padding: 24px;
+ 	color: rgba(3,27,78,.7);
+ 	border-radius: 4px;
+ 	background-color: #fff;
+ 	border: 1px solid #e5e8ed;
+ 	cursor: pointer;
+
+ 	-webkit-box-shadow: 0 2px 4px rgba(3,27,78,.06);
+ 	box-shadow: 0 2px 4px rgba(3,27,78,.06);
+ 	-webkit-transition: -webkit-box-shadow .25s linear;
+ 	transition: -webkit-box-shadow .25s linear;
+ 	transition: box-shadow .25s linear;
+ 	transition: box-shadow .25s linear,-webkit-box-shadow .25s linear;
+ }
+ .card.service:hover{
+ 	-webkit-box-shadow: 0 10px 20px rgba(3,27,78,.1);
+ 	box-shadow: 0 10px 20px rgba(3,27,78,.1);
+ 	color: rgba(3,27,78,.7);
+ }
+ .www-card-title{
+ 	color: #031b4e;
+ 	font-size: 18px;
+ 	margin: 0;
+ }
+ .www-card-detail{
+ 	margin: 0 0 16px;
+ }
+ img{
+ 	max-width: 100%;
+ 	height: auto;
+ 	border: 0;
+ }
+ .card-image{
+ 	margin-bottom: 16px;
+ }
+
  </style>
 

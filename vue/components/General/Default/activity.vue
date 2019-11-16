@@ -3,35 +3,18 @@
     <section class="top_120 section">
       <div class="container">
         <div class="fire-spinner" v-if="shouldLoading(type)"></div>
-        <div class="columns">
-          <div class="column is-8 is-mobile">
-            <PostsSearchForm v-model="query" @onSearchEnter="getItems('click')"/>
-            <hr>
-            <div class="main_title">
+<div class="columns">
+            <div class="column is-8 is-mobile">
+                          <div class="main_title">
               <h3>What we did</h3>
+              <p>Activities that we did in the past</p>
             </div>
-            <div class="columns is-multiline">
-              <div class="column is-4"
-              v-for="(activity, idx) in postsData.activities.posts.data"
-              :key="idx">
-              <div class="image" @click="getDetail('activity', activity)">
-                <img :src="`${baseUrl}${activity.image}`" :alt="activity.image">
-              </div>
-              <div class="contents">
-                <a @click="getDetail('activity', activity)">
-                  <h3 v-html="$utils.sub($utils.strip(activity.title),60)"></h3>
-                </a>
-                <div class="detail">
-                  <p v-html="$utils.sub($utils.strip(activity.description), 120)"></p>
-                  <p>
-                    <span :datetime="activity.updated_at">{{activity.formatted_start_date}}</span>
-                  </p>
-                </div>
-              </div>
-            </div>
+            <PostsSearchForm v-model="query" @onSearchEnter="getItems('click')"/>
+                                    <hr>
           </div>
-
-          <div class="column is-8" v-if="isNotFound()">
+</div>
+<div class="columns">
+            <div class="column" v-if="isNotFound()">
             <div class="devsite-article mt-20">
               <h1 class="devsite-page-title">
                 Search results for
@@ -42,14 +25,39 @@
             </div>
             <div class="result-snippet">No Results</div>
           </div>
-          <nav class="courses-pagination mt-20">
-            <ul class="pagination justify-content-lg-end justify-content-center">
+</div>
+          <div class="columns">
+      <div class="column is-4 is-multiline"
+              v-for="(activity, idx) in postsData.activities.posts.data"
+              :key="idx">
+<div class="card">
+                  <div class="img-card" @click="getDetail('activity', activity)">
+                <img :src="`${baseUrl}${activity.image}`" :alt="activity.image">
+              </div>
+  <div class="card-content">
+              <div class="post-title">
+                <a @click="getDetail('activity', activity)">
+                  <h3 v-html="$utils.sub($utils.strip(activity.title),60)"></h3>
+                </a>
+              </div>
+                  <p v-html="$utils.sub($utils.strip(activity.description), 120)"></p>
+                  <p class="date-post">
+                    <span :datetime="activity.updated_at">{{activity.formatted_start_date}}</span>
+                  </p>
+</div>
+</div>
+            </div>
+</div>
+<div class="columns">
+  <div class="column is-12">
+              <nav class="news-pagination">
+            <ul class="pagination">
               <li class="page-item">
                 <a
                 :disabled="paginate.current_page===1"
                 @click="prevPage(paginate.current_page - 1)"
                 aria-label="Previous"
-                class="active"
+                class="active pre"
                 >
                 <i class="fa fa-angle-left"></i>
               </a>
@@ -65,31 +73,9 @@
           </li>
         </ul>
       </nav>
-    </div>
-    <div class="column is-4">
-      <div class="widget">
-        <h4>Popular activity</h4>
-        <hr>
-        <ul class="recent_posts">
-          <li class="activity" v-for="(activity, idx) in postsData.activities.mostViews" :key="idx">
-            <div class="thum">
-              <img :src="`${baseUrl}${activity.image}`" :alt="activity.image">
-            </div>
-            <div class="detail">
-              <i class="icon-calendar-empty"></i><span>{{activity.post_updated}}</span>
-              <div class="recent_post_title">
-                <a @click="getDetail('activity', activity)" v-html="$utils.sub($utils.strip(activity.title), 85)"></a>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div> 
-
-    </div>
   </div>
-  <!-- row -->
 </div>
-<!-- container -->
+</div>
 </section>
 </div>
 </template>

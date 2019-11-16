@@ -36,7 +36,8 @@ body {
     padding: 0;
 }
 
-.hidden {
+._hidden {
+    display: inline-block !important;
     padding-top: 0;
     position: relative;
     overflow: hidden !important;

@@ -9,7 +9,8 @@
         :paginationEnabled="false"
         :speed="500"
         :loop="true"
-        :navigationEnabled="true"
+        :navigationEnabled="false"
+        :padding="0"
         :slideOnSwipe="true"
         :navigationPrevLabel='`<span class="prev"> <i class="fa fa-chevron-left aria-hidden="true""></i>
     </span>`'
@@ -32,7 +33,7 @@
         </div>
 </slide>
 </carousel>
-<!--====== SLIDER PART ENDS ======-->
+
 </div>
 </template>
 
@@ -79,7 +80,7 @@ export default {
 };
 </script>
 
-<style>
+<style scope>
 
 
 .slide-left {

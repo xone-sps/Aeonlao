@@ -64,7 +64,7 @@
                     </div>
                 </div>
                 <div class="column is-3 course-slied mt-10">
-                    <div><h3>Other posts</h3></div>
+                    <div><h3>Other news</h3></div>
                     <hr>
                     <div class="columns is-multiline">
                         <div class="column is-12" v-for="(item, idx) in singlePostsData.news.others" :key="idx">
@@ -80,8 +80,7 @@
                                         <p v-html="$utils.sub($utils.strip(item.description), 120)"></p>
                                     </div> -->
                                         <div class="date-post">
-                                            <time class="updated-date" :datetime="item.updated_at">
-                                                <i class="fa fa-calendar"></i>
+                                            <time class="updated-date" :datetime="item.updated_at">Updated - 
                                                 {{item.post_updated}}
                                             </time>
                                         </div>

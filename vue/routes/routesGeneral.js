@@ -127,27 +127,27 @@ export default [
     },
 
 
-    // {
-    //     path: '/',
-    //     name: 'home',
-    //     component: Home,
-    //     meta: {
-    //         ...metas.df({
-    //             hideNavFooter: false,
-    //         })
-    //     },
-    // },
-
-        {
+    {
         path: '/',
         name: 'home',
-        component: Home2,
+        component: Home,
         meta: {
             ...metas.df({
                 hideNavFooter: false,
             })
         },
     },
+
+    //     {
+    //     path: '/',
+    //     name: 'home',
+    //     component: Home2,
+    //     meta: {
+    //         ...metas.df({
+    //             hideNavFooter: false,
+    //         })
+    //     },
+    // },
       {
         path: '/promotion',
         name: 'promotion',

@@ -2,17 +2,17 @@
 	<div>
 		<section class="section top_100">
 			<div class="container">
-				        <div class="columns">
-          <div class="column top_10">
-            <PostsSearchForm v-model="query" @onSearchEnter="getItems('click')"/>
-          </div>
-        </div>
+				<div class="columns">
+					<div class="column top_10">
+						<PostsSearchForm v-model="query" @onSearchEnter="getItems('click')"/>
+					</div>
+				</div>
 				<hr>
 				<div class="main_title">
 					<h3>Promotions</h3>
 				</div>
-				<div class="columns is-multiline">
-					<div class="column is-3">
+				<div class="columns is-multiline is-mobile">
+					<div class="column is-3 is-desktop">
 						<div class="card">
 							<div class="card-image">
 								<figure class="image is-4by3">
@@ -84,7 +84,7 @@
 							</div>
 						</div>
 					</div>
-										<div class="column is-3">
+					<div class="column is-3">
 						<div class="card">
 							<div class="card-image">
 								<figure class="image is-4by3">

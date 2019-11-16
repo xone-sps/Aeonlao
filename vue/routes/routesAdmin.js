@@ -1,4 +1,4 @@
-import Dashboard from '@com/Admin/Dashboard.vue'
+ import Dashboard from '@com/Admin/Dashboard.vue'
 
 
 import Checker from '@com/Admin/Members/Checker.vue'

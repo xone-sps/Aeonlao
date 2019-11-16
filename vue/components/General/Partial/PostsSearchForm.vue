@@ -3,7 +3,7 @@
   <form v-on:submit.prevent="searchEnter">
     <input type="text" class="input is-rounded" id="search-bar" placeholder="Search" @keyup.enter="triggerButton"
                 v-model="inputText">
-    <a @click="searchEnter"><i class="fa fa-search search-icon"></i></a>
+    <!-- <a @click="searchEnter"><i class="fa fa-search search-icon"></i></a> -->
   </form>
 </div>
 <!-- saidbar search -->

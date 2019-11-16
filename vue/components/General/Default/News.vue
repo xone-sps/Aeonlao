@@ -4,8 +4,8 @@
         <main class="top_120">
           <div class="container">
             <div class="fire-spinner" v-if="shouldLoading(type)"></div>
-            <div class="columns">
-              <div class="column is-8">
+              <!-- <div class="column is-8"> -->
+                <div class="columns">
                 <div class="column is-12">
                   <div class="box_style_1">
                    <div class="widget">
@@ -15,6 +15,8 @@
                   </div>
                 </div>
               </div>
+              </div>
+              <div class="columns">
               <div class="columns is-multiline">
                 <div class="column is-4" v-for="(news, idx) in postsData.news.posts.data" :key="idx">
                   <div class="card">
@@ -25,7 +27,7 @@
                         </a>
                       </figure>
                     </div>
-                    <div class="post_info clearfix">
+                    <div class="post_info clearfix card-content">
                       <div class="post-left">
                         <ul>
                           <li><i class="fa fa-calendar"></i> On <span> {{news.post_updated}}</span></li>
@@ -59,14 +61,15 @@
                   </div>
                   <div class="result-snippet">No Results</div>
                 </div>
-
                 <hr>
-                <div class="is-centered">
+              </div>
+              <div class="columns">
+                  <div class="is-centered">
                   <nav class="news-pagination">
                     <ul class="pagination">
                       <li class="page-item">
                         <a :disabled="paginate.current_page===1" @click="prevPage(paginate.current_page - 1)"
-                        aria-label="Previous" class="active">
+                        aria-label="Previous" class="active pre">
                         <i class="fa fa-angle-left"></i>
                       </a>
                     </li>
@@ -80,9 +83,9 @@
                 </ul>
               </nav>
             </div>
-          </div>
-
-          <div class="column is-4">
+              </div>
+          <!-- </div> -->
+          <!-- <div class="column is-4">
             <div class="columns is-multiline">
               <div class="column is-12">
                 <div class="widget">
@@ -100,7 +103,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </main>
   </section>
@@ -109,7 +112,6 @@
 
 <script>
 import Base from '@com/Bases/GeneralBase.js'
-
 export default Base.extend({
   data: () => ({
     type: 'news',

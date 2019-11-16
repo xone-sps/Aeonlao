@@ -148,12 +148,12 @@ export default {
     ...mapMutations(["setSidebar"]),
     ...mapActions(["Logout"]),
     removeClasses() {
-      this.jq("body").removeClass("hidden");
-      this.jq("html").removeClass("hidden");
+      this.jq("body").removeClass("_hidden");
+      this.jq("html").removeClass("_hidden");
     },
     addClasses() {
-      this.jq("html").addClass("hidden");
-      this.jq("body").addClass("hidden");
+      this.jq("html").addClass("_hidden");
+      this.jq("body").addClass("_hidden");
     },
     maskClick() {
       this.removeClasses();

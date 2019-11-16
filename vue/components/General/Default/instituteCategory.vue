@@ -27,10 +27,10 @@
                     <div>
                       <a @click="Route({name: 'institute', query: {category_id: cat.id}})">
                         <span class="icon-pro">
-                           <!--  <img
+                            <img
                             :src="`${baseUrl}${baseRes}assets/images/all-icon/ctg-3.png`"
                             alt="Icon"
-                            > -->
+                            >
                             <img src="/assets/images/Kredit-AEON.png" alt="">
                           </span>
                         </a>

@@ -49,11 +49,6 @@ Route::group(['prefix' => '/', 'middleware' => ['cors', 'parseToken', 'auth:api'
         Route::get('/searches/{type}', 'AdminController@responseSearches')->name('api.admin.get.searches');
         /*** @Searches ** */
 
-        /*** @Users actions ** */
-        Route::post('/users-register', 'AdminController@responseActionAddUser')->name('api.admin.post.users.addUser');
-        Route::post('/users-change-status/{id}', 'AdminController@responseActionChangeUserStatus')->name('api.admin.post.users.changeStatus');
-        Route::post('/users-delete/{id}', 'AdminController@responseActionDeleteUser')->name('api.admin.post.users.deleteUser');
-        /*** @Users actions ** */
 
         Route::group(['prefix' => '/institute', 'middleware' => []], function () {
             /*** @Category ** */
@@ -139,18 +134,8 @@ Route::group(['prefix' => '/', 'middleware' => ['cors', 'parseToken', 'auth:api'
         /*** @Searches ** */
         Route::get('/searches/{type}', 'UserController@responseSearches')->name('api.user.get.searches');
         /*** @Searches ** */
-        /*** @UserProfileSettings ** */
-        Route::get('/profile-options', 'UserController@responseProfileOptions')->name('api.user.get.profileOptions');
-        Route::post('/profile-manage', 'UserController@responseProfileManage')->name('api.user.get.responseProfileManage');
-        /*** @UserProfileSettings ** */
-        Route::post('/profile-manage', 'UserController@responseProfileManage')->name('api.user.get.profileManage');
-        Route::post('/credentials-manage', 'UserController@responseCredentialsManage')->name('api.user.get.credentialsManage');
-        /*** @UserProfileSettings ** */
-        /*** @UserMembersProfileSearch** */
-        Route::post('/search-members', 'UserController@responseSearchMembersProfile')->name('api.user.post.searchMembersProfile');
-        /*** @UserMembersProfileSearch** */
-        /*** @UserMemberProfileSingle** */
-        Route::get('/profile-single/{user_id}', 'UserController@responseUserProfileSingle')->name('api.user.get.userProfileSingle');
+
+
         /*** @UserMemberProfileSingle** */
         /*** @DashboardData Make it can accessible for admin and user * */
         Route::get('/dashboard-data', 'UserController@responseDashboardData')->name('api.user.get.dashboardData');
@@ -163,45 +148,8 @@ Route::group(['prefix' => '/', 'middleware' => ['cors', 'parseToken', 'auth:api'
             Route::get('/institute/fetch', 'UserController@responseActionFetchInstituteUsers')->name('api.user.fetch.institutes');
         });
 
-        /**@CheckAssessmentComment */
-        Route::get('/check-assessment-comments', 'UserController@getCheckAssessmentComments')->name('api.user.fetch.comments');
-        Route::post('/check-assessment-comments-manage', 'UserController@manageCheckAssessmentComments')->name('api.user.save.comments');
-        Route::delete('/check-assessment-comments-delete', 'UserController@deleteCheckAssessmentComments')->name('api.user.delete.comments');
-        /**@CheckAssessmentComment */
-
-        /**@CheckAssessmentFieldInspector */
-        Route::get('/assessment-field-inspector/fetch/{id}', 'UserController@getCheckAssessmentFieldInspector')->name('api.user.fetch.field-inspector.assessment');
-        Route::post('/assessment-field-inspector/check-assessment/save-answer/{id}', 'UserController@responseSaveCheckAessmentAnswerFieldInspector')->name('api.user.fetch.field-inspector.save-check-assessment');
-        /**@CheckAssessmentFieldInspector */
-
-        /***@AutoUserLogin*/
-        Route::post('auto-login', 'UserController@responseActionUserAutoLogin')->name('api.users.post.UserAutoLogin');
-        /***@AutoUserLogin*/
 
     });
-    /******************** @UserSection ****************** */
-    /******************** @Institute ****************** */
-    Route::group(['prefix' => '/institute', 'middleware' => []], function () {
-        Route::get('/dashboard-data', 'InstituteProfileController@responseDashboardData')->name('api.institute.get.dashboardData');
-        Route::get('/profile-options', 'InstituteProfileController@responseProfileOptions')->name('api.institute.get.responseProfileOptions');
-        Route::post('/profile-manage', 'InstituteProfileController@responseProfileManage')->name('api.institute.post.responseProfileManage');
-    });
-    /******************** @Institute ****************** */
-
-    /******************** @Field-inspector ****************** */
-    Route::group(['prefix' => '/field-inspector', 'middleware' => []], function () {
-        Route::get('/dashboard-data', 'FieldInspectorController@responseDashboardData')->name('api.field-inspector.get.dashboardData');
-        Route::get('/profile-options', 'FieldInspectorController@responseProfileOptions')->name('api.field-inspector.get.responseProfileOptions');
-        Route::post('/profile-manage', 'FieldInspectorController@responseProfileManage')->name('api.field-inspector.post.responseProfileManage');
-    });
-    /******************** @Field-inspector ****************** */
-    /******************** @Checker ****************** */
-    Route::group(['prefix' => '/checker', 'middleware' => []], function () {
-        Route::get('/dashboard-data', 'CheckerController@responseDashboardData')->name('api.checker.get.dashboardData');
-        Route::get('/profile-options', 'CheckerController@responseProfileOptions')->name('api.checker.get.responseProfileOptions');
-        Route::post('/profile-manage', 'CheckerController@responseProfileManage')->name('api.checker.post.responseProfileManage');
-    });
-    /******************** @Checker ****************** */
 
     /**
      ***************** @AdminSection routes ************************

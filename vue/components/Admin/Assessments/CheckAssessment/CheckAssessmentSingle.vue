@@ -226,7 +226,6 @@
     import FormTop from '@com/Admin/Assessments/AssessmentForm.vue'
     import HeaderBanner from '@com/Admin/Assessments/Includes/HeaderBanner.vue'
     import ViewAnswerQuestionnaire from './ViewAnswerQuestion/ViewAnswerQuestionnaire.vue'
-    import Comments from '@com/Institute/CheckAssessmentComments.vue'
 
     export default AdminBase.extend({
         name: "CheckAssessmentSingle",
@@ -234,7 +233,6 @@
             FormTop,
             HeaderBanner,
             ViewAnswerQuestionnaire,
-            Comments
         },
         data() {
             return {
