@@ -42,40 +42,6 @@
                         </div>
                     </div>
                 </div>
-                        <!-- single blog -->
-                        <!--Search Form-->
-                        <div class="column is-8" v-if="isNotFound()">
-                            <div class="devsite-article mt-20">
-                                <h1 class="devsite-page-title">
-                                    Search results for
-                                    <span class="devsite-search-term">
-                                      <span class="devsite-search-term">{{ query }}</span>
-                                    </span>
-                                </h1>
-                            </div>
-                            <div class="result-snippet">No Results</div>
-                        </div>
-                        <nav class="courses-pagination mt-20">
-                            <ul class="pagination justify-content-lg-end justify-content-center">
-                                <li class="page-item">
-                                    <a
-                                        :disabled="paginate.current_page===1"
-                                        @click="prevPage(paginate.current_page - 1)"
-                                        aria-label="Previous"
-                                        class="active">
-                                        <i class="fa fa-angle-left"></i>
-                                    </a>
-                                </li>
-                                <li class="page-item">
-                                    <a
-                                        :disabled="paginate.current_page===paginate.last_page"
-                                        @click="nextPage(paginate.current_page + 1)"
-                                        aria-label="Next">
-                                        <i class="fa fa-angle-right"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
                     </div>
                     <div class="column is-4">
                         <div class="saidbar">

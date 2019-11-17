@@ -2,82 +2,94 @@
     <div>
         <carousels :items="homeData.banners"/>
         <!--====== SLIDER PART ENDS ======-->
-
-        <!--====== CATEGORY PART START ======-->
-        <InstituteCategory/>
-        <!--====== CATEGORY PART ENDS ======-->
-
-        <!--====== ABOUT PART START ======-->
-
-        <section id="about-part">
+<div class="bg-product">
+    <section class="section">
+<div class="container">
+<div class="row-table">
+    <div class="columns is-mobile">
+<div class="column is-6 is-mobile">
+    <div class="whead">
+        <h3 class="title text-light">PRO<span class="color">DUCT</span></h3>
+</div>
+</div>
+        <div class="column is-6 is-mobile btn-right">
+        <div class="btn-block">
+            <button href="#" class="button e-button">VIEW ALL</button>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="slider-product">
+        <Product/>
+        </div>
+        </div>
+        </section>
+</div>
+<div class="bg-promotion">
+            <section class="section">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-5">
-                        <div class="section-title mt-50">
-                            <h2>ກ່ຽວກັບສູນ</h2>
-                            <h5>ຍິນດີຕ້ອນຮັບສູ່ ສປຄ</h5>
-                        </div>
-                        <!-- section title -->
-                        <div class="about-cont">
-                            <div class="about-cont" v-if="!$utils.isEmptyVar(s.description)">
-                                <p v-html="$utils.sub($utils.strip(s.description),800)"></p>
-                            </div>
-                            <router-link :to="{name: 'about'}" class="main-btn mt-55">Learn More</router-link>
-                        </div>
-                    </div>
-                    <!-- about cont -->
-                    <div class="col-lg-6 offset-lg-1" v-if="homeData.latest_scholarship.length > 0">
-                        <div class="about-event mt-50">
-                            <div class="event-title">
-                                <h3>ທຶນການສຶກສາ</h3>
-                            </div>
-                            <!-- event title -->
-                            <ul>
-                                <li v-for="(scholarship, index) in homeData.latest_scholarship" :key="index">
-                                    <div class="singel-event">
-                                        <span>
-                                          <i class="fa fa-calendar"></i>
-                                          {{scholarship.formatted_updated_at}}
-                                        </span>
-                                        <a @click="getDetail('scholarship', scholarship)">
-                                            <h4 v-html="$utils.sub($utils.strip(scholarship.title), 100)"></h4>
-                                        </a>
-                                        <span>
-                                          <i class="fa fa-clock-o"></i>
-                                          <strong>Deadline:</strong>
-                                          {{scholarship.formatted_deadline}}
-                                        </span>
-                                        <span>
-                                          <i class="fa fa-map-marker"></i>
-                                          {{scholarship.place}}
-                                        </span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="singel-event">
-                                        <router-link :to="{name:'scholarships'}"
-                                                     class="main-btn mt-15">ອ່ານເພີ່ມ
-                                        </router-link>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!-- about event -->
-                    </div>
-                </div>
-                <!-- row -->
+<div class="row-table">
+            <div class="columns is-mobile">
+          <div class="column is-6 is-mobile">
+            <div class="whead">
+            <h3 class="title">PROMO<span class="color">TION</span></h3>
             </div>
-            <!-- container -->
-            <div class="about-bg">
-                <img :src="`${baseUrl}${baseRes}/assets/images/about/bg-1.png`" alt="About">
+            </div>
+                    <div class="column is-6 is-mobile btn-right">
+        <div class="btn-block">
+            <button href="#" class="button btn-primary">VIEW ALL</button>
+        </div>
+        </div>
+                </div>
+</div>
+<div class="columns">
+            <Promotion/>
+</div>
             </div>
         </section>
-
-        <!--====== ABOUT PART ENDS ======-->
-
+</div>
+<!-- service section -->
+        <div class="bg-service">
+            <section class="section">
+                <div class="container">
+                <div class="columns is-mobile">
+                    <div class="column is-6">
+                         <div class="whead">
+                                <h3 class="title text-light">SER<span class="color">VICE</span></h3>
+                            </div>
+                         </div>
+                         <div class="column is-6 btn-right">
+        <div class="btn-block">
+            <button href="#" class="button e-button">VIEW ALL</button>
+        </div>
+        </div>   
+                        </div>
+<Service/>
+            </div>
+            </section>
+        </div>
+        <!-- benefit section -->
+                <div class="bg-benefit">
+            <section class="section">
+                <div class="container">
+                <div class="columns is-mobile">
+                    <div class="column is-6">
+                         <div class="whead">
+                                <h3 class="title">BENEFITS FROM MEMBERSHIP CARDS</h3>
+                                <h3 class="title"><span class="color">ສິດຜົນປະໂຫຍດສຳລັບສະມາຊິກ AEON</span></h3>
+                            </div>
+                         </div>
+                         <div class="column is-6 btn-right">
+        <div class="btn-block">
+            <button href="#" class="button btn-primary">VIEW ALL</button>
+        </div>
+        </div>   
+    </div>
+<Benefit/>
+            </div>
+            </section>
+        </div>
         <!--====== APPLY PART START ======-->
-
         <section id="course-part" class="pt-35 pb-30 gray-bg" v-if="homeData.latest_institutes.length">
             <div class="container">
                 <div class="row">
@@ -144,7 +156,7 @@
         </section>
 
         <!--====== NEWS PART START ======-->
-        <section id="news-part" class="pt-50 pb-50" v-if="homeData.latest_news.length > 0">
+        <section class="section" v-if="homeData.latest_news.length > 0">
             <div class="container">
                 <div class="row align-items-end">
                     <div class="col-lg-6 col-md-8 col-sm-7">
@@ -162,8 +174,8 @@
                     </div>
                 </div>
                 <!-- row -->
-                <div class="row" v-if="homeData.latest_news.length > 0">
-                    <div class="col-lg-6">
+                <div class="columns" v-if="homeData.latest_news.length > 0">
+                    <div class="column is-6">
                         <div class="singel-news mt-30">
                             <div class="news-thum pb-25" @click="getDetail('news', homeData.latest_news[0])">
                                 <img :src="homeData.latest_news[0].image" alt="News">
@@ -187,18 +199,18 @@
                         </div>
                         <!-- singel news -->
                     </div>
-                    <div class="col-lg-6">
+                    <div class="column is-6">
                         <template v-for="(news, idx) in homeData.latest_news">
                             <div class="singel-news news-list singel-course" :key="idx" v-if="idx!==0">
-                                <div class="row">
-                                    <div class="col-sm-4">
+                                <div class="columns">
+                                    <div class="column is-4">
                                         <div class="news-thum mt-30">
                                             <div class="image img-card" @click="getDetail('news', news)">
                                                 <img :src="news.image" :alt="news.image">
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-8">
+                                    <div class="column is-8">
                                         <div class="news-cont mt-30">
                                             <ul>
                                                 <li>
@@ -230,19 +242,18 @@
         <!--====== NEWS PART ENDS ======-->
         <!--====== ACTIVITY PART START ======-->
         <section
-            id="publication-part"
-            class="pt-25 pb-30 gray-bg"
+            class="section"
             v-if="homeData.latest_activity.length > 0">
             <div class="container">
-                <div class="row align-items-end">
-                    <div class="col-lg-6 col-md-8 col-sm-7">
+                <div class="columns align-items-end">
+                    <div class="column is-6">
                         <div class="section-title pb-10">
                             <h3>ກິດຈະກຳ</h3>
                             <h5>ການເຄື່ອນໄຫຼວກິດຈະກຳຕ່າງໆ</h5>
                         </div>
                         <!-- section title -->
                     </div>
-                    <div class="col-lg-6 col-md-4 col-sm-5">
+                    <div class="column is-6">
                         <div class="products-btn text-right pb-10">
                             <a @click="Route({name: 'activities'})" class="main-btn">ກິດຈະກຳທັງໝົດ</a>
                         </div>
@@ -250,9 +261,9 @@
                     </div>
                 </div>
                 <!-- row -->
-                <div class="row">
+                <div class="columns">
                     <div
-                        class="col-lg-4 col-md-6 col-sm-8"
+                        class="column is-4"
                         v-for="(activity,index) in (homeData.latest_activity)"
                         :key="index">
                         <div class="custom-card">
@@ -288,7 +299,10 @@
 <script>
     import {Carousel, Slide} from "vue-carousel";
     import Carousels from "@com/General/Partial/Carousel.vue";
-    import InstituteCategory from "@com/General/Default/instituteCategory.vue";
+    import Product from "@com/General/Default/Slider/Product.vue";
+    import Promotion from "@com/General/Default/Slider/Promotion.vue"
+    import Benefit from "@com/General/Default/Slider/Benefit.vue"
+    import Service from "@com/General/Default/Slider/Service.vue"
     import Sponsor from "@com/General/Default/Sponsor.vue";
     import ContactForm from "@com/General/ContactForm.vue";
     import Base from "@com/Bases/GeneralBase.js";
@@ -305,7 +319,10 @@
             Slide,
             ContactForm,
             Sponsor,
-            InstituteCategory
+            Product,
+            Promotion,
+            Service,
+            Benefit
         },
         created() {
             this.setPageTitle(`Home`);

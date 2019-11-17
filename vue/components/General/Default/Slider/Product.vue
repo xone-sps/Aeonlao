@@ -19,18 +19,31 @@
             :navigationNextLabel='`<span class="next"><i class="fa fa-chevron-right" aria-hidden="true"></i</span>`'
               >
               <slide v-for="(cat, index) in homeData.instituteCategoriesHome" :key="index">
-                <div class="card slider">
+                <div class="slider">
                     <div class="pro-slide">
                       <a @click="Route({name: 'institute', query: {category_id: cat.id}})">
-                            <img src="/assets/images/banners/promotion-slide1.jpg" alt="">
+                            <img class="image" src="/assets/images/Kredit-AEON.png" alt="">
                         </a>
+                      </div>
+                      <div class="pro-name">
+                        <p @click="Route({name: 'institute', query: {category_id: cat.id}})" v-html="$utils.sub($utils.strip(cat.name), 20)"></p>
+                      </div>
+                  </div>
+                  <div class="slide">
+                            <div class="pro-slide">
+                      <a @click="Route({name: 'institute', query: {category_id: cat.id}})">
+                            <img class="image" src="/assets/images/Kredit-AEON.png" alt="">
+                        </a>
+                      </div>
+                      <div class="pro-name">
+                        <p @click="Route({name: 'institute', query: {category_id: cat.id}})" v-html="$utils.sub($utils.strip(cat.name), 20)"></p>
                       </div>
                   </div>
                 </slide>
               </carousel>
-              <!--====== SLIDER PART ENDS ======-->
             </div>
           </div>
+          <!-- row -->
   </div>
 </template>
 

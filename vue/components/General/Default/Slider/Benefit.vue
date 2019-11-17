@@ -1,9 +1,9 @@
 <template>
   <div>
-          <div class="culumns">
-            <div class="column is-12 is-mobile">
+          <div class="culumns is-mobile">
+            <div class="column is-12 ">
               <carousel
-              :per-page="3"
+              :per-page="5"
               :mouse-drag="true"
               :autoplay="false"
               :autoplayHoverPause="false"
@@ -22,13 +22,40 @@
                 <div class="card slider">
                     <div class="pro-slide">
                       <a @click="Route({name: 'institute', query: {category_id: cat.id}})">
-                            <img src="/assets/images/banners/promotion-slide1.jpg" alt="">
+                            <img src="/assets/images/banners/benefits-navicon3.png" alt="">
                         </a>
                       </div>
                   </div>
                 </slide>
               </carousel>
-              <!--====== SLIDER PART ENDS ======-->
+            </div>
+          </div>
+                    <div class="culumns is-mobile">
+            <div class="column is-12 ">
+              <carousel
+              :per-page="3"
+              :mouse-drag="true"
+              :autoplay="false"
+              :autoplayHoverPause="false"
+              :autoplayTimeout="9000"
+              :paginationEnabled="true"
+              :speed="900"
+              :loop="true"
+              :paginationPadding="1"
+              :paginationSize="8"
+              :navigationEnabled="true"
+              :navigationPrevLabel='`<span class="prev"> <i class="fa fa-chevron-left aria-hidden="true""></i>
+            </span>`'
+            :navigationNextLabel='`<span class="next"><i class="fa fa-chevron-right" aria-hidden="true"></i</span>`'
+              >
+              <slide v-for="(cat, index) in homeData.instituteCategoriesHome" :key="index">
+                <div class="slider">
+                      <a @click="Route({name: 'institute', query: {category_id: cat.id}})">
+                            <img src="/assets/images/banners/benefits-slide2.jpg" alt="">
+                        </a>
+                  </div>
+                </slide>
+              </carousel>
             </div>
           </div>
   </div>

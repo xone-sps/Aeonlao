@@ -3,7 +3,7 @@
           <div class="culumns">
             <div class="column is-12 is-mobile">
               <carousel
-              :per-page="3"
+              :per-page="1"
               :mouse-drag="true"
               :autoplay="false"
               :autoplayHoverPause="false"
@@ -18,17 +18,29 @@
             </span>`'
             :navigationNextLabel='`<span class="next"><i class="fa fa-chevron-right" aria-hidden="true"></i</span>`'
               >
-              <slide v-for="(cat, index) in homeData.instituteCategoriesHome" :key="index">
-                <div class="card slider">
-                    <div class="pro-slide">
-                      <a @click="Route({name: 'institute', query: {category_id: cat.id}})">
-                            <img src="/assets/images/banners/promotion-slide1.jpg" alt="">
-                        </a>
+              <slide v-for="(service, index) in homeData.latest_scholarship" :key="index">
+                    <div class="slider">
+                        <div class="columns">
+<div class="column is-6">
+                            <img class="img" src="/assets/images/service-card.png" alt="">
+                
+</div>
+<div class="column is-6">
+                          <div class="pro-service">
+                             <a @click="getDetail('scholarship', scholarship)">
+                        <h4 class="title" v-html="$utils.sub($utils.strip(service.title), 100)"></h4>
+                            </a>
+                            <p class="des" v-html="$utils.sub($utils.strip(service.description), 300)"></p>
                       </div>
+                      <div class="btn-group">
+                          <button class="button btn-light">Read more</button>
+                              <button class="button btn-warning">Register</button>
+                      </div>
+</div>
                   </div>
+</div>
                 </slide>
               </carousel>
-              <!--====== SLIDER PART ENDS ======-->
             </div>
           </div>
   </div>
@@ -39,7 +51,7 @@ import { Carousel, Slide } from "vue-carousel";
 import Base from "@com/Bases/GeneralBase.js";
 
 export default Base.extend({
-  name: "Category",
+  name: "Service",
 
   components: {
     Carousel,

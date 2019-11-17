@@ -4090,9 +4090,6 @@ img.avatar-image {
   .button {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
-    /* display: inline-flex; */
-    /* height: 44px; */
-    /* margin: .25em 0; */
     padding: 0 30px;
     color: #fff;
     text-decoration: none;
@@ -4104,7 +4101,6 @@ img.avatar-image {
     justify-content: center;
     line-height: 44px;
     border: none;
-    border-radius: 30px;
     cursor: pointer;
     -webkit-transition: all 0.55s cubic-bezier(0.19, 1, 0.22, 1);
     transition: all 0.55s cubic-bezier(0.19, 1, 0.22, 1);
