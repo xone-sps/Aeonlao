@@ -22,7 +22,7 @@
                 <div class="card slider">
                     <div class="pro-slide">
                       <a @click="Route({name: 'institute', query: {category_id: cat.id}})">
-                            <img src="/assets/images/banners/promotion-slide1.jpg" alt="">
+                            <img src="/assets/images/banners/promotion-slide2.jpg" alt="">
                         </a>
                       </div>
                   </div>

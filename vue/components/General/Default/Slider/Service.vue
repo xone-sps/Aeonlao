@@ -22,15 +22,14 @@
                     <div class="slider">
                         <div class="columns">
 <div class="column is-6">
-                            <img class="img" src="/assets/images/service-card.png" alt="">
-                
+                            <img class="img" src="/assets/images/service-card.png" alt="">      
 </div>
 <div class="column is-6">
                           <div class="pro-service">
                              <a @click="getDetail('scholarship', scholarship)">
                         <h4 class="title" v-html="$utils.sub($utils.strip(service.title), 100)"></h4>
                             </a>
-                            <p class="des" v-html="$utils.sub($utils.strip(service.description), 300)"></p>
+                            <p class="des" v-html="$utils.sub($utils.strip(service.description), 200)"></p>
                       </div>
                       <div class="btn-group">
                           <button class="button btn-light">Read more</button>

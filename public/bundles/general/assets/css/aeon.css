@@ -14,9 +14,11 @@
     padding: 30px 0;
 }
 .bg-benefit {
-    min-height: 954px;
     background: url(../images/background/bg_benefits.jpg) no-repeat center;
     padding: 60px 0;
+}
+.bg-member-shop{
+  background: url(../images/background/bg_member-shop.jpg) no-repeat center;
 }
 /* .row-table > div {
     display: table-cell;

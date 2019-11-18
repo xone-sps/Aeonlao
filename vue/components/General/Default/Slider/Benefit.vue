@@ -33,7 +33,7 @@
                     <div class="culumns is-mobile">
             <div class="column is-12 ">
               <carousel
-              :per-page="3"
+              :per-page="4"
               :mouse-drag="true"
               :autoplay="false"
               :autoplayHoverPause="false"
